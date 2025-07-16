@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 export default function Template() {
     return (
@@ -65,12 +65,12 @@ export default function Template() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#blog"
+                                    <Link
+                                        to="/blog"
                                         className="text-white/90 hover:text-primary-500 font-medium transition-colors duration-300"
                                     >
                                         Blog
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a

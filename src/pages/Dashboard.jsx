@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function App() {
+export default function Dashboard() {
   return (
     <div className="w-full overflow-x-hidden">
       {/* Hero Section */}
@@ -57,72 +57,72 @@ export default function App() {
           </button>
 
           {/* Trusted by section */}
-          <div className="mb-12">
-            <p className="text-white/60 mb-8">Trusted by the world's most innovative teams</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="mb-8">
+            <p className="text-white/60 mb-6 text-sm">Trusted by the world's most innovative teams</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
               {/* Row 1 */}
-              <div className="border border-blue-500/30 rounded-lg p-4 flex items-center justify-center min-h-[80px] glass-effect">
+              <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
                 <img
                   src="/images/acme.png"
                   alt="Acme Corp"
-                  className="max-w-full max-h-12 object-contain"
+                  className="max-w-full max-h-8 object-contain"
                 />
               </div>
 
-              <div className="border border-blue-500/30 rounded-lg p-4 flex items-center justify-center min-h-[80px] glass-effect">
+              <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
                 <img
                   src="/images/echo.png"
                   alt="Echo Valley"
-                  className="max-w-full max-h-12 object-contain"
+                  className="max-w-full max-h-8 object-contain"
                 />
               </div>
 
-              <div className="border border-blue-500/30 rounded-lg p-4 flex items-center justify-center min-h-[80px] glass-effect">
+              <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
                 <img
                   src="/images/quantum.png"
                   alt="Quantum"
-                  className="max-w-full max-h-12 object-contain"
+                  className="max-w-full max-h-8 object-contain"
                 />
               </div>
 
-              <div className="border border-blue-500/30 rounded-lg p-4 flex items-center justify-center min-h-[80px] glass-effect">
+              <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
                 <img
                   src="/images/pulse.png"
                   alt="PULSE"
-                  className="max-w-full max-h-12 object-contain"
+                  className="max-w-full max-h-8 object-contain"
                 />
               </div>
 
               {/* Row 2 */}
-              <div className="border border-blue-500/30 rounded-lg p-4 flex items-center justify-center min-h-[80px] glass-effect">
+              <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
                 <img
                   src="/images/outside.png"
                   alt="Outside"
-                  className="max-w-full max-h-12 object-contain"
+                  className="max-w-full max-h-8 object-contain"
                 />
               </div>
 
-              <div className="border border-blue-500/30 rounded-lg p-4 flex items-center justify-center min-h-[80px] glass-effect">
+              <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
                 <img
                   src="/images/apex.png"
                   alt="APEX"
-                  className="max-w-full max-h-12 object-contain"
+                  className="max-w-full max-h-8 object-contain"
                 />
               </div>
 
-              <div className="border border-blue-500/30 rounded-lg p-4 flex items-center justify-center min-h-[80px] glass-effect">
+              <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
                 <img
                   src="/images/celestial.png"
                   alt="Celestial"
-                  className="max-w-full max-h-12 object-contain"
+                  className="max-w-full max-h-8 object-contain"
                 />
               </div>
 
-              <div className="border border-blue-500/30 rounded-lg p-4 flex items-center justify-center min-h-[80px] glass-effect">
+              <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
                 <img
                   src="/images/twice.png"
                   alt="2TWICE"
-                  className="max-w-full max-h-12 object-contain"
+                  className="max-w-full max-h-8 object-contain"
                 />
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function App() {
           <img
             src="/images/Image-BintangBG.png"
             alt="Star"
-            className="absolute top-20 right-80 w-auto h-20 animate-pulse delay-500 opacity-60"
+            className="absolute top-30 right-80 w-auto h-20 animate-pulse delay-500 opacity-60"
           />
         </div>
 
@@ -167,14 +167,134 @@ export default function App() {
             <div className="space-y-6 lg:order-1">
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 Manusia.AI adalah perusahaan konsultan dan custom AI yang berbasis di Jakarta,
-                yang berfokus pada penyediaan layanan konsultasi strategis AI dan pengembangan
-                solusi AI kustom untuk kebutuhan perusahaan skala menengah hingga besar.
-              </p>
-              <p className="text-base md:text-lg text-white/90 leading-relaxed">
-                Kami tidak hanya memberikan saran strategis, kami juga membangun dan menerapkan
-                solusi AI yang disesuaikan dengan konteks dan tantangan spesifik bisnis setiap customer.
+                yang fokus terhadap pengembangan solusi bisnis berbasis AI sesuai kebutuhan perusahaan.
+                Produk utama kita terdiri dari: Advin (AI individual assistant), Brilian (AI knowledge
+                management), dan Rangkum (AI summarizer). Kami juga membuka layanan jasa pembuatan AI
+                custom untuk membantu perusahaan memecahkan tantangan dalam operasional bisnis atau
+                bahkan strategi customer.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brilian.AI Section */}
+      <section className="py-20 bg-gradient-to-b from-dark-900 to-blue-900 relative">
+        {/* Background Stars */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/Image-BintangBG.png"
+            alt="Star"
+            className="absolute top-12 right-12 w-4 h-4 animate-pulse opacity-30"
+          />
+          <img
+            src="/images/Image-BintangBG.png"
+            alt="Star"
+            className="absolute bottom-16 left-16 w-5 h-5 animate-pulse delay-800 opacity-35"
+          />
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="flex items-center justify-center mb-8">
+            <img
+              src="/images/Image-BintangBG.png"
+              alt="Star"
+              className="w-6 h-6 mr-2 animate-pulse"
+            />
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Brilian.AI
+            </h2>
+            <img
+              src="/images/Image-BintangBG.png"
+              alt="Star"
+              className="w-6 h-6 ml-2 animate-pulse delay-300"
+            />
+          </div>
+
+          <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto">
+            AI-powered knowledge management platform <br />yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
+          </p>
+
+          <p className="text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
+            brilian.ai merupakan AI-powered knowledge management platform yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman. Dengan pencarian kontekstual dan otomatisasi dokumen, brilian.ai mempercepat pengambilan keputusan dan meningkatkan efisiensi kerja.
+          </p>
+
+          <div className="border-2 border-dashed border-blue-500/30 rounded-lg p-8">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              {/* Tanya Apa Aja */}
+              <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30">
+                <h3 className="text-xl font-semibold text-white mb-4">Tanya Apa Aja</h3>
+                <p className="text-white/70 mb-4 text-sm">
+                  Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
+                </p>
+                <div className="bg-dark-800/50 rounded-lg p-4">
+                  <img src="/images/Image-Tanyaapasaja.png" alt="Chat Interface" className="w-full h-24 object-cover rounded" />
+                </div>
+              </div>
+
+              {/* Buat Laporan */}
+              <div className="bg-orange-900/50 rounded-xl p-6 border border-orange-500/30">
+                <h3 className="text-xl font-semibold text-white mb-4">Buat Laporan</h3>
+                <p className="text-white/70 mb-4 text-sm">
+                  Get trusted answers from every corner of your Workspace, instantly and in full context.
+                </p>
+                <div className="bg-dark-800/50 rounded-lg p-4">
+                  <img src="/images/Image-Buatlaporan.png" alt="Report Generation" className="w-full h-24 object-cover rounded" />
+                </div>
+              </div>
+
+              {/* Analisis Laporan */}
+              <div className="bg-green-900/50 rounded-xl p-6 border border-green-500/30">
+                <h3 className="text-xl font-semibold text-white mb-4">Analisis Laporan</h3>
+                <p className="text-white/70 mb-4 text-sm">
+                  Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
+                </p>
+                <div className="bg-dark-800/50 rounded-lg p-4">
+                  <img src="/images/Image-Analisislaporan.png" alt="Report Analysis" className="w-full h-24 object-cover rounded" />
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Riset Market */}
+              <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30">
+                <h3 className="text-xl font-semibold text-white mb-4">Riset Market</h3>
+                <p className="text-white/70 mb-4 text-sm">
+                  Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
+                </p>
+                <div className="bg-dark-800/50 rounded-lg p-4">
+                  <img src="/images/Image-Risetmarket.png" alt="Market Research" className="w-full h-24 object-cover rounded" />
+                </div>
+              </div>
+
+              {/* Pikirin Ide */}
+              <div className="bg-orange-900/50 rounded-xl p-6 border border-orange-500/30">
+                <h3 className="text-xl font-semibold text-white mb-4">Pikirin Ide</h3>
+                <p className="text-white/70 mb-4 text-sm">
+                  Get trusted answers from every corner of your Workspace, instantly and in full context.
+                </p>
+                <div className="bg-dark-800/50 rounded-lg p-4">
+                  <img src="/images/Image-Pikirinide.png" alt="Ideas Generation" className="w-full h-24 object-cover rounded" />
+                </div>
+              </div>
+
+              {/* Rangkumin Meeting */}
+              <div className="bg-green-900/50 rounded-xl p-6 border border-green-500/30">
+                <h3 className="text-xl font-semibold text-white mb-4">Rangkumin Meeting</h3>
+                <p className="text-white/70 mb-4 text-sm">
+                  Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
+                </p>
+                <div className="bg-dark-800/50 rounded-lg p-4">
+                  <img src="/images/Image-Rangkuminmeet.png" alt="Meeting Summary" className="w-full h-24 object-cover rounded" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+              Book a demo
+            </button>
           </div>
         </div>
       </section>
@@ -273,85 +393,6 @@ export default function App() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Rangkum.AI Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-900 to-dark-900 relative">
-        {/* Background Stars */}
-        <div className="absolute inset-0">
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute top-20 left-20 w-6 h-6 animate-pulse opacity-40"
-          />
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute bottom-20 right-20 w-4 h-4 animate-pulse delay-600 opacity-30"
-          />
-        </div>
-
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="flex items-center justify-center mb-8">
-            <img
-              src="/images/Image-BintangBG.png"
-              alt="Star"
-              className="w-6 h-6 mr-2 animate-pulse"
-            />
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Rangkum.AI
-            </h2>
-            <img
-              src="/images/Image-BintangBG.png"
-              alt="Star"
-              className="w-6 h-6 ml-2 animate-pulse delay-300"
-            />
-          </div>
-
-          <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto">
-            Intelligent Document Processing (IDP) <br />yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
-          </p>
-
-          <p className="text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Rangkum.ai adalah platform Intelligent Document Processing (IDP) <br /> berbasis AI yang membantu organisasi mengotomatisasi ekstraksi, pemrosesan, dan peringkasan dokumen, dari PDF, formulir, hingga laporan kompleks
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Intelligent Document Processing */}
-            <div className="bg-purple-900/50 rounded-xl p-6 border border-purple-500/30">
-              <h3 className="text-lg font-semibold text-white mb-4">
-                Intelligent Document Processing (IDP) dan OCR AI Canggih
-              </h3>
-              <div className="bg-dark-800/50 rounded-lg p-4">
-                <img src="/images/Image-IDP.png" alt="IDP Processing" className="w-full h-24 object-cover rounded" />
-              </div>
-            </div>
-
-            {/* Otomatisasi Alur Kerja */}
-            <div className="bg-teal-900/50 rounded-xl p-6 border border-teal-500/30">
-              <h3 className="text-lg font-semibold text-white mb-4">
-                Otomatisasi Alur Kerja dan Integrasi Sistem
-              </h3>
-              <div className="bg-dark-800/50 rounded-lg p-4">
-                <img src="/images/Image-Otomatisasi.png" alt="System Integration" className="w-full h-24 object-cover rounded" />
-              </div>
-            </div>
-
-            {/* Integrasi Mudah */}
-            <div className="bg-orange-900/50 rounded-xl p-6 border border-orange-500/30">
-              <h3 className="text-lg font-semibold text-white mb-4">
-                Integrasi Mudah
-              </h3>
-              <div className="bg-dark-800/50 rounded-lg p-4">
-                <img src="/images/Image-Integrasi.png" alt="System Integration" className="w-full h-24 object-cover rounded" />
-              </div>
-            </div>
-          </div>
-
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
-            Book a demo
-          </button>
         </div>
       </section>
 

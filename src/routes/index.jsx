@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Template from "../layout/Template";
-import App from "../pages/App";
+import Dashboard from "../pages/Dashboard";
+import Blog from "../pages/users/Blog";
 
 export const router = createBrowserRouter([
     {
@@ -9,7 +10,11 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <App />,
+                element: <Dashboard />,
+            },
+            {
+                path: "blog",
+                element: <Blog />,
             },
             {
                 path: "*",
