@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0B1426 0%, #1E2F5C 50%, #0B1426 100%);
+    color: white;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4A9EFF;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-xl bg-white/5 border border-primary-500/20;
+    backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(74, 158, 255, 0.2);
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40 hover:-translate-y-1;
+    background: linear-gradient(45deg, #4A9EFF, #00D4FF);
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 158, 255, 0.3);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(74, 158, 255, 0.4);
+  }
+
+  .btn-secondary {
+    @apply glass-effect text-primary-500 font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:bg-primary-500/10 hover:-translate-y-1;
+  }
+}
+
+/* Animations */
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .md\:grid-cols-8 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
