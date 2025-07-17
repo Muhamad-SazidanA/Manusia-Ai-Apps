@@ -228,7 +228,7 @@ export default function Dashboard() {
           <img
             src="/images/Image-BintangBG.png"
             alt="Star"
-            className="absolute bottom-16 left-16 w-auto h-20 animate-pulse delay-800 opacity-35"
+            className="absolute bottom-16 left-16 w-auto h-6 animate-pulse delay-800 opacity-35"
           />
         </div>
 
@@ -391,8 +391,8 @@ export default function Dashboard() {
             <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-orange-500/30 hover:border-orange-500/60 hover:bg-orange-900/20 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(251,146,60,0.3)' }}>
               <h3
-                className="text-l font-inter font-normal text-orange-300 text-left leading-snug drop-shadow-sm mb-4"
-                style={{ textShadow: '0 0 4px rgba(251,146,60,0.4)' }}
+                className="text-l font-inter font-normal text-orange-300 text-left text-[#FC6D2D] leading-snug drop-shadow-sm mb-4"
+                style={{ textShadow: '0 0 4px rgba(251,146,60,0.4)' }} 
               >
                 Integrasi Mudah
               </h3>

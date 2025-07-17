@@ -32,14 +32,14 @@ export default function Template() {
                                     </a>
                                     <ul className="absolute top-full left-0 mt-2 glass-effect rounded-xl p-2 min-w-[180px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                                         <li>
-                                            <a href="#brilian" className="block px-4 py-2 text-white/80 hover:text-white transition-all duration-300">
+                                            <Link to="/brilian-ai" className="block px-4 py-2 text-white/80 hover:text-white transition-all duration-300">
                                                 Brilian.AI
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#rangkum" className="block px-4 py-2 text-white/80 hover:text-white transition-all duration-300">
+                                            <Link to="/rangkum-ai" className="block px-4 py-2 text-white/80 hover:text-white transition-all duration-300">
                                                 Rangkum.AI
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -50,7 +50,7 @@ export default function Template() {
 
                             {/* Demo Button */}
                             <div className="flex justify-center items-center h-10 px-6 text-white bg-blue-600/20 border border-blue-500/30 rounded-md hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out font-inter font-light">
-                                <button>Demo</button>
+                                <Link to="/demo-email">Demo</Link>
                             </div>
                         </div>
                     </div>
@@ -98,12 +98,12 @@ export default function Template() {
                                 <ul className="space-y-2">
                                     <li>
                                         <a href="#brilian" className="flex items-center gap-2 text-white/70 hover:text-primary-500 text-sm transition-all">
-                                        Brilian.AI
+                                            Brilian.AI
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#rangkum" className="flex items-center gap-2 text-white/70 hover:text-primary-500 text-sm transition-all">
-                                        Rangkum.AI
+                                            Rangkum.AI
                                         </a>
                                     </li>
                                 </ul>
