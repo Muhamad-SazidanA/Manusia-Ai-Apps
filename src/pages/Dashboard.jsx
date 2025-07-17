@@ -36,13 +36,10 @@ export default function Dashboard() {
             Real Business Challenges
           </h1>
 
-
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-white/90 mb-4 max-w-[520px] mx-auto font-inter font-normal leading-[1.6]">
             From Data to Insights: Tailored AI Solutions for <br />Enterprise Growth
           </p>
-
-
 
           {/* CTA Button */}
           <div className="flex justify-center">
@@ -226,12 +223,12 @@ export default function Dashboard() {
           <img
             src="/images/Image-BintangBG.png"
             alt="Star"
-            className="absolute top-12 right-12 w-6 h-6 animate-pulse opacity-30"
+            className="absolute top-12 right-12 w-auto h-20 animate-pulse opacity-30"
           />
           <img
             src="/images/Image-BintangBG.png"
             alt="Star"
-            className="absolute bottom-16 left-16 w-6 h-6 animate-pulse delay-800 opacity-35"
+            className="absolute bottom-16 left-16 w-auto h-20 animate-pulse delay-800 opacity-35"
           />
         </div>
 
@@ -242,72 +239,77 @@ export default function Dashboard() {
             </h2>
           </div>
 
-
           <div className="grid md:grid-cols-3 gap-8 mb-8">
-            {/* Tanya Apa Aja */}
-            <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30 hover:bg-blue-900/70 transition-all duration-300">
-              <h3 className="text-xl font-inter font-medium text-white mb-4">Tanya Apa Aja</h3>
+            {/* Tanya Apa Aja - Blue Color (#489CFF) */}
+            <div className="bg-slate-900/80 rounded-xl p-6 border border-[#489CFF]/30 hover:border-[#489CFF]/60 hover:bg-[#489CFF]/10 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(72, 156, 255, 0.3)' }}>
+              <h3 className="text-xl font-inter font-medium text-[#489CFF] mb-4">Tanya Apa Aja</h3>
               <p className="text-white/70 mb-4 text-sm font-inter font-normal">
                 Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
               </p>
-              <div className="bg-dark-800/50 rounded-lg p-4">
+              <div className="bg-slate-800/50 rounded-lg p-4">
                 <img src="/images/Image-Tanyaapasaja.png" alt="Chat Interface" className="w-full h-24 object-cover rounded" />
               </div>
             </div>
 
-            {/* Buat Laporan */}
-            <div className="bg-blue-800/50 rounded-xl p-6 border border-blue-400/30 hover:bg-blue-800/70 transition-all duration-300">
-              <h3 className="text-xl font-inter font-medium text-white mb-4">Buat Laporan</h3>
+            {/* Buat Laporan - Orange Color (#FC6D2D) */}
+            <div className="bg-slate-900/80 rounded-xl p-6 border border-[#FC6D2D]/30 hover:border-[#FC6D2D]/60 hover:bg-[#FC6D2D]/10 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(252, 109, 45, 0.3)' }}>
+              <h3 className="text-xl font-inter font-medium text-[#FC6D2D] mb-4">Buat Laporan</h3>
               <p className="text-white/70 mb-4 text-sm font-inter font-normal">
                 Get trusted answers from every corner of your Workspace, instantly and in full context.
               </p>
-              <div className="bg-dark-800/50 rounded-lg p-4">
+              <div className="bg-slate-800/50 rounded-lg p-4">
                 <img src="/images/Image-Buatlaporan.png" alt="Report Generation" className="w-full h-24 object-cover rounded" />
               </div>
             </div>
 
-            {/* Analisis Laporan */}
-            <div className="bg-blue-800/50 rounded-xl p-6 border border-blue-400/30 hover:bg-blue-800/70 transition-all duration-300">
-              <h3 className="text-xl font-inter font-medium text-white mb-4">Analisis Laporan</h3>
+            {/* Analisis Laporan - Teal Color (#10E0C1) */}
+            <div className="bg-slate-900/80 rounded-xl p-6 border border-[#10E0C1]/30 hover:border-[#10E0C1]/60 hover:bg-[#10E0C1]/10 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(16, 224, 193, 0.3)' }}>
+              <h3 className="text-xl font-inter font-medium text-[#10E0C1] mb-4">Analisis Laporan</h3>
               <p className="text-white/70 mb-4 text-sm font-inter font-normal">
                 Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
               </p>
-              <div className="bg-dark-800/50 rounded-lg p-4">
+              <div className="bg-slate-800/50 rounded-lg p-4">
                 <img src="/images/Image-Analisislaporan.png" alt="Report Analysis" className="w-full h-24 object-cover rounded" />
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Riset Market */}
-            <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30 hover:bg-blue-900/70 transition-all duration-300">
-              <h3 className="text-xl font-inter font-medium text-white mb-4">Riset Market</h3>
+            {/* Riset Market - Blue Color (#489CFF) */}
+            <div className="bg-slate-900/80 rounded-xl p-6 border border-[#489CFF]/30 hover:border-[#489CFF]/60 hover:bg-[#489CFF]/10 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(72, 156, 255, 0.3)' }}>
+              <h3 className="text-xl font-inter font-medium text-[#489CFF] mb-4">Riset Market</h3>
               <p className="text-white/70 mb-4 text-sm font-inter font-normal">
                 Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
               </p>
-              <div className="bg-dark-800/50 rounded-lg p-4">
+              <div className="bg-slate-800/50 rounded-lg p-4">
                 <img src="/images/Image-Risetmarket.png" alt="Market Research" className="w-full h-24 object-cover rounded" />
               </div>
             </div>
 
-            {/* Pikirin Ide */}
-            <div className="bg-blue-800/50 rounded-xl p-6 border border-blue-400/30 hover:bg-blue-800/70 transition-all duration-300">
-              <h3 className="text-xl font-inter font-medium text-white mb-4">Pikirin Ide</h3>
+            {/* Pikirin Ide - Orange Color (#FC6D2D) */}
+            <div className="bg-slate-900/80 rounded-xl p-6 border border-[#FC6D2D]/30 hover:border-[#FC6D2D]/60 hover:bg-[#FC6D2D]/10 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(252, 109, 45, 0.3)' }}>
+              <h3 className="text-xl font-inter font-medium text-[#FC6D2D] mb-4">Pikirin Ide</h3>
               <p className="text-white/70 mb-4 text-sm font-inter font-normal">
                 Get trusted answers from every corner of your Workspace, instantly and in full context.
               </p>
-              <div className="bg-dark-800/50 rounded-lg p-4">
+              <div className="bg-slate-800/50 rounded-lg p-4">
                 <img src="/images/Image-Pikirinide.png" alt="Ideas Generation" className="w-full h-24 object-cover rounded" />
               </div>
             </div>
 
-            {/* Rangkumin Meeting */}
-            <div className="bg-blue-800/50 rounded-xl p-6 border border-blue-400/30 hover:bg-blue-800/70 transition-all duration-300">
-              <h3 className="text-xl font-inter font-medium text-white mb-4">Rangkumin Meeting</h3>
+            {/* Rangkumin Meeting - Teal Color (#10E0C1) */}
+            <div className="bg-slate-900/80 rounded-xl p-6 border border-[#10E0C1]/30 hover:border-[#10E0C1]/60 hover:bg-[#10E0C1]/10 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(16, 224, 193, 0.3)' }}>
+              <h3 className="text-xl font-inter font-medium text-[#10E0C1] mb-4">Rangkumin Meeting</h3>
               <p className="text-white/70 mb-4 text-sm font-inter font-normal">
                 Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
               </p>
-              <div className="bg-dark-800/50 rounded-lg p-4">
+              <div className="bg-slate-800/50 rounded-lg p-4">
                 <img src="/images/Image-Rangkuminmeet.png" alt="Meeting Summary" className="w-full h-24 object-cover rounded" />
               </div>
             </div>
@@ -357,8 +359,8 @@ export default function Dashboard() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-12 mb-12 mt-8">
-            {/* Intelligent Document Processing */}
-            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-blue-500/30 hover:bg-blue-900/70 transition-all duration-300"
+            {/* Intelligent Document Processing - Purple Color */}
+            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/60 hover:bg-purple-900/20 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(139,92,246,0.3)' }}>
               <h3
                 className="text-l font-inter font-normal text-purple-300 text-left leading-snug drop-shadow-sm mb-4"
@@ -371,8 +373,8 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Otomatisasi Alur Kerja */}
-            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 mt-8 border border-cyan-400/30 hover:bg-blue-900/70 transition-all duration-300"
+            {/* Otomatisasi Alur Kerja - Cyan Color */}
+            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 mt-8 border border-cyan-400/30 hover:border-cyan-400/60 hover:bg-cyan-900/20 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(34,211,238,0.3)' }}>
               <h3
                 className="text-l font-inter font-normal text-cyan-300 text-left leading-snug drop-shadow-sm mb-4"
@@ -385,8 +387,8 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Integrasi Mudah */}
-            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-orange-500/30 hover:bg-blue-900/70 transition-all duration-300"
+            {/* Integrasi Mudah - Orange Color */}
+            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-orange-500/30 hover:border-orange-500/60 hover:bg-orange-900/20 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(251,146,60,0.3)' }}>
               <h3
                 className="text-l font-inter font-normal text-orange-300 text-left leading-snug drop-shadow-sm mb-4"
@@ -406,7 +408,6 @@ export default function Dashboard() {
               Book a demo
             </button>
           </div>
-
         </div>
       </section>
 
@@ -417,7 +418,7 @@ export default function Dashboard() {
           <img
             src="/images/Image-BintangBG.png"
             alt="Stars"
-            className="absolute bottom-16 right-16 w-6 h-6 animate-pulse opacity-35"
+            className="absolute bottom-16 right-16 w-auto h-20 animate-pulse opacity-35"
           />
         </div>
 
@@ -432,7 +433,6 @@ export default function Dashboard() {
 
           {/* Blog Cards Centered */}
           <div className="flex flex-col md:flex-row justify-center items-stretch gap-10">
-
             {/* Blog 1 */}
             <div className="w-full max-w-md rounded-xl overflow-hidden border border-blue-500/30 bg-black/50 shadow-[0_0_40px_5px_rgba(59,130,246,0.4)] hover:shadow-[0_0_60px_8px_rgba(59,130,246,0.6)] transition-all duration-300">
               <div className="p-4">
