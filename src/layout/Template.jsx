@@ -9,90 +9,53 @@ export default function Template() {
                 <nav className="py-3">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex items-center justify-between">
-                            {/* Kiri: Logo */}
-                            <div className="md:flex items-center space-x-4 pb-5">
-                                <img
-                                    src="/images/Logo-Manusia.Ai.png"
-                                    alt="Manusia.AI"
-                                    className="h-10 w-auto"
-                                />
+                            {/* Logo */}
+                            <div className="flex items-center space-x-4 mb-5">
+                                <Link to="/">
+                                    <img
+                                        src="/images/Logo-Manusia.Ai.png"
+                                        alt="Manusia.AI"
+                                        className="h-10 w-auto cursor-pointer"
+                                    />
+                                </Link>
                             </div>
 
-                            {/* Tengah: Navigation Menu */}
-                            <ul className="hidden md:flex items-center space-x-8">
+                            {/* Navigation Menu */}
+                            <ul className="hidden md:flex items-center space-x-12 text-white/70 text-sm font-light">
                                 <li>
-                                    <a
-                                        href="#about"
-                                        className="text-white/90 hover:text-primary-500 font-medium transition-colors duration-300"
-                                    >
-                                        About
-                                    </a>
+                                    <a href="#about" className="hover:text-white transition-colors duration-300">About</a>
                                 </li>
                                 <li className="relative group">
-                                    <a
-                                        href="#products"
-                                        className="text-white/90 hover:text-primary-500 font-medium transition-colors duration-300 flex items-center space-x-1"
-                                    >
+                                    <a href="#products" className="hover:text-white transition-colors duration-300 flex items-center space-x-1">
                                         <span>Products</span>
                                         <i className="fas fa-chevron-down text-xs"></i>
                                     </a>
                                     <ul className="absolute top-full left-0 mt-2 glass-effect rounded-xl p-2 min-w-[180px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                                         <li>
-                                            <a
-                                                href="#brilian"
-                                                className="block px-4 py-2 text-white/80 hover:text-primary-500 rounded-lg transition-all duration-300"
-                                            >
+                                            <a href="#brilian" className="block px-4 py-2 text-white/80 hover:text-white transition-all duration-300">
                                                 Brilian.AI
                                             </a>
                                         </li>
                                         <li>
-                                            <a
-                                                href="#rangkum"
-                                                className="block px-4 py-2 text-white/80 hover:text-primary-500 rounded-lg transition-all duration-300"
-                                            >
+                                            <a href="#rangkum" className="block px-4 py-2 text-white/80 hover:text-white transition-all duration-300">
                                                 Rangkum.AI
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="relative group">
-                                    <a
-                                        href="#industries"
-                                        className="text-white/90 hover:text-primary-500 font-medium transition-colors duration-300 flex items-center space-x-1"
-                                    >
-                                        <span>Industries</span>
-                                        <i className="fas fa-chevron-down text-xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <Link
-                                        to="/blog"
-                                        className="text-white/90 hover:text-primary-500 font-medium transition-colors duration-300"
-                                    >
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#pricing"
-                                        className="text-white/90 hover:text-primary-500 font-medium transition-colors duration-300"
-                                    >
-                                        Pricing
-                                    </a>
-                                </li>
+                                <li><a href="#industries" className="hover:text-white transition-colors duration-300">Industries</a></li>
+                                <li><Link to="/blog" className="hover:text-white transition-colors duration-300">Blog</Link></li>
+                                <li><a href="#pricing" className="hover:text-white transition-colors duration-300">Pricing</a></li>
                             </ul>
 
-                            {/* Kanan: Tombol Demo */}
-                            <div className="hidden md:block">
-                                <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-300">
-                                    Demo
-                                </button>
+                            {/* Demo Button */}
+                            <div className="flex justify-center items-center h-10 px-6 text-white bg-blue-600/20 border border-blue-500/30 rounded-md hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out font-inter font-light">
+                                <button>Demo</button>
                             </div>
                         </div>
                     </div>
                 </nav>
             </header>
-
 
             {/* Main Content */}
             <main className="flex-1 w-full">
@@ -100,42 +63,29 @@ export default function Template() {
             </main>
 
             {/* Footer */}
-            <footer className="glass-effect border-t border-primary-500/20 mt-auto">
+            <footer className="bg-[#041449] mt-auto text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                     <div className="flex flex-col lg:flex-row justify-between items-start space-y-8 lg:space-y-0">
-                        {/* Footer Left */}
+                        {/* Left Section */}
                         <div className="flex flex-col space-y-6">
-                            <div className="flex items-center space-x-2">
-                                <img
-                                    src="/images/Logo-Manusia.Ai.png"
-                                    alt="Manusia.AI"
-                                    className="h-10 w-auto"
-                                />
-                            </div>
+                            <Link to="/">
+                                <img src="/images/Logo-Manusia.Ai.png" alt="Manusia.AI" className="h-10 w-auto cursor-pointer" />
+                            </Link>
                             <div className="flex space-x-3">
-                                <a
-                                    href="#"
-                                    className="flex items-center justify-center w-10 h-10 bg-white/10 rounded-lg text-primary-500 hover:bg-primary-500 hover:text-white transition-all duration-300"
-                                >
-                                    <i className="fab fa-linkedin text-sm"></i>
+                                <a href="#" className="flex items-center justify-center w-10 h-10 bg-white/10 rounded-lg text-white hover:bg-white/20 transition">
+                                    <i className="fab fa-linkedin-in"></i>
                                 </a>
-                                <a
-                                    href="#"
-                                    className="flex items-center justify-center w-10 h-10 bg-white/10 rounded-lg text-primary-500 hover:bg-primary-500 hover:text-white transition-all duration-300"
-                                >
-                                    <i className="fab fa-instagram text-sm"></i>
+                                <a href="#" className="flex items-center justify-center w-10 h-10 bg-white/10 rounded-lg text-white hover:bg-white/20 transition">
+                                    <i className="fab fa-instagram"></i>
                                 </a>
-                                <a
-                                    href="#"
-                                    className="flex items-center justify-center w-10 h-10 bg-white/10 rounded-lg text-primary-500 hover:bg-primary-500 hover:text-white transition-all duration-300"
-                                >
-                                    <i className="fab fa-whatsapp text-sm"></i>
+                                <a href="#" className="flex items-center justify-center w-10 h-10 bg-white/10 rounded-lg text-white hover:bg-white/20 transition">
+                                    <i className="fab fa-whatsapp"></i>
                                 </a>
                             </div>
                         </div>
 
-                        {/* Footer Right */}
-                        <div className="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-16">
+                        {/* Right Section */}
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-10">
                             <div className="min-w-[120px]">
                                 <h4 className="text-lg font-semibold text-white mb-4">
                                     About
@@ -147,19 +97,13 @@ export default function Template() {
                                 </h4>
                                 <ul className="space-y-2">
                                     <li>
-                                        <a
-                                            href="#"
-                                            className="text-white/70 hover:text-primary-500 transition-colors duration-300 text-sm"
-                                        >
-                                            Brilian.AI
+                                        <a href="#brilian" className="flex items-center gap-2 text-white/70 hover:text-primary-500 text-sm transition-all">
+                                        Brilian.AI
                                         </a>
                                     </li>
                                     <li>
-                                        <a
-                                            href="#"
-                                            className="text-white/70 hover:text-primary-500 transition-colors duration-300 text-sm"
-                                        >
-                                            Rangkum.AI
+                                        <a href="#rangkum" className="flex items-center gap-2 text-white/70 hover:text-primary-500 text-sm transition-all">
+                                        Rangkum.AI
                                         </a>
                                     </li>
                                 </ul>

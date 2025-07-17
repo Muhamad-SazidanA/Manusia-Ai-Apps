@@ -17,7 +17,7 @@ export default function Blog() {
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white min-h-screen">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Step Ahead with Manusia AI Insights</h1>
+                    <h1 className="text-4xl font-bold text-gray-900 mb-4">ia AI Insights</h1>
                     <p className="text-xl text-gray-600">
                         Stay ahead of the curve with our curated articles on AI, IT trends, automation, and real-world case studies.
                     </p>

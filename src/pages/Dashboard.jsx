@@ -3,8 +3,8 @@ import React from 'react';
 export default function Dashboard() {
   return (
     <div className="w-full overflow-x-hidden">
-      {/* Hero Section */}
-      <section className="relative py-20 text-center bg-gradient-to-b from-dark-900 via-blue-900 to-dark-900">
+      {/* Hero Section - Content 1 */}
+      <section className="relative py-20 text-center bg-gradient-to-b from-black via-slate-900 to-blue-900">
         {/* Decorative Stars */}
         <div className="absolute inset-0">
           <img
@@ -17,48 +17,43 @@ export default function Dashboard() {
             alt="Star"
             className="absolute top-20 left-80 w-auto h-20 animate-pulse delay-300 opacity-50"
           />
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute bottom-32 left-32 w-3 h-3 animate-pulse delay-700 opacity-40"
-          />
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute bottom-20 right-20 w-6 h-6 animate-pulse delay-1000 opacity-60"
-          />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 rounded-full px-4 py-2 mb-8">
+          <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 rounded-full px-4 py-2 mb-4">
             <img
               src="/images/Image-BintangBG.png"
               alt="Star"
-              className="w-4 h-4 animate-pulse opacity-60"
+              className="w-5 h-5 animate-pulse opacity-60"
             />
-            <span className="text-blue-300 text-sm">New: Our AI integration just landed</span>
+            <span className="text-blue-300 text-sm font-inter font-normal">New: Our AI integration just landed</span>
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            <span className="text-blue-300">Custom AI for Your</span><br />
-            <span className="text-blue-200">Real Business Challenges</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
+            Custom AI for Your<br />
+            Real Business Challenges
           </h1>
 
+
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-            From Data to Insights: Tailored AI Solutions for Enterprise Growth
+          <p className="text-lg md:text-xl text-white/90 mb-4 max-w-[520px] mx-auto font-inter font-normal leading-[1.6]">
+            From Data to Insights: Tailored AI Solutions for <br />Enterprise Growth
           </p>
 
+
+
           {/* CTA Button */}
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 mb-16">
-            Start for free
-          </button>
+          <div className="flex justify-center">
+            <button className="flex justify-center items-center h-10 px-10 text-white bg-blue-600/20 border border-blue-500/30 rounded-md mb-12 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light">
+              Start for free
+            </button>
+          </div>
 
           {/* Trusted by section */}
           <div className="mb-8">
-            <p className="text-white/60 mb-6 text-sm">Trusted by the world's most innovative teams</p>
+            <p className="text-white/60 mb-6 text-sm font-inter font-normal">Trusted by the world's most innovative teams</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
               {/* Row 1 */}
               <div className="border border-blue-500/30 rounded-lg p-3 flex items-center justify-center min-h-[60px] glass-effect">
@@ -130,20 +125,20 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* What is Manusia.AI Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-900 to-dark-900 relative overflow-hidden">
+      {/* What is Manusia.AI Section - Content 2 */}
+      <section className="py-20 bg-gradient-to-b from-blue-900 via-slate-800 to-black relative overflow-hidden">
         {/* Background Stars */}
         <div className="absolute inset-0">
           <img
             src="/images/Image-BintangBG.png"
             alt="Star"
-            className="absolute top-30 right-80 w-auto h-20 animate-pulse delay-500 opacity-60"
+            className="absolute top-36 right-80 w-auto h-20 animate-pulse delay-500 opacity-60"
           />
         </div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white mb-8">
               What is Manusia.AI
             </h2>
           </div>
@@ -152,12 +147,12 @@ export default function Dashboard() {
             {/* Right Content - Hexagon Network */}
             <div className="relative flex justify-center lg:order-2">
               <div className="relative">
-                {/* Hexagon Network Image - Simplified */}
+                {/* Hexagon Network Image - Made 2x larger */}
                 <div className="flex items-center justify-center">
                   <img
                     src="/images/hexsagon-ai.png"
                     alt="hexagon product network"
-                    className="w-full max-w-none h-auto object-contain scale-[2]"
+                    className="w-full max-w-8xl h-auto object-contain scale-[2]"
                   />
                 </div>
               </div>
@@ -165,32 +160,35 @@ export default function Dashboard() {
 
             {/* Left Content */}
             <div className="space-y-6 lg:order-1">
-              <p className="text-base md:text-lg text-white/90 leading-relaxed">
-                Manusia.AI adalah perusahaan konsultan dan custom AI yang berbasis di Jakarta,
-                yang fokus terhadap pengembangan solusi bisnis berbasis AI sesuai kebutuhan perusahaan.
-                Produk utama kita terdiri dari: Advin (AI individual assistant), Brilian (AI knowledge
-                management), dan Rangkum (AI summarizer). Kami juga membuka layanan jasa pembuatan AI
-                custom untuk membantu perusahaan memecahkan tantangan dalam operasional bisnis atau
-                bahkan strategi customer.
+              <p className="text-base md:text-lg text-white/90 leading-relaxed font-inter font-normal">
+                Manusia.AI adalah perusahaan konsultan dan custom AI<br />
+                yang berbasis di Jakarta, yang berfokus pada<br />
+                penyediaan layanan konsultasi strategi AI dan<br />
+                pengembangan solusi AI kustom untuk kebutuhan<br />
+                perusahaan skala menengah hingga besar.<br />
+                Kami tidak hanya memberikan saran strategis, kami<br />
+                juga membangun dan menerapkan solusi AI yang<br />
+                disesuaikan dengan konteks dan tantangan spesifik<br />
+                bisnis setiap customer.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Brilian.AI Section */}
-      <section className="py-20 bg-gradient-to-b from-dark-900 to-blue-900 relative">
+      {/* Brilian.AI Section - Content 3 */}
+      <section className="py-20 bg-gradient-to-b from-black via-blue-900 to-slate-800 relative">
         {/* Background Stars */}
         <div className="absolute inset-0">
           <img
             src="/images/Image-BintangBG.png"
             alt="Star"
-            className="absolute top-12 right-12 w-4 h-4 animate-pulse opacity-30"
+            className="absolute top-12 right-12 w-auto h-20 animate-pulse opacity-30"
           />
           <img
             src="/images/Image-BintangBG.png"
             alt="Star"
-            className="absolute bottom-16 left-16 w-5 h-5 animate-pulse delay-800 opacity-35"
+            className="absolute bottom-16 left-16 w-auto h-20 animate-pulse delay-800 opacity-35"
           />
         </div>
 
@@ -199,266 +197,271 @@ export default function Dashboard() {
             <img
               src="/images/Image-BintangBG.png"
               alt="Star"
-              className="w-6 h-6 mr-2 animate-pulse"
+              className="w-auto h-20 mr-2 animate-pulse"
             />
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white">
               Brilian.AI
             </h2>
             <img
               src="/images/Image-BintangBG.png"
               alt="Star"
-              className="w-6 h-6 ml-2 animate-pulse delay-300"
+              className="w-auto h-20 ml-2 animate-pulse delay-300"
             />
           </div>
 
-          <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto font-inter font-normal">
             AI-powered knowledge management platform <br />yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
           </p>
 
-          <p className="text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-            brilian.ai merupakan AI-powered knowledge management platform yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman. Dengan pencarian kontekstual dan otomatisasi dokumen, brilian.ai mempercepat pengambilan keputusan dan meningkatkan efisiensi kerja.
+          <p className="text-white/90 mb-12 max-w-8xl mx-auto leading-relaxed font-inter font-medium">
+            brilian.ai merupakan AI-powered knowledge<br /> management platform yang membantu organisasi<br /> mengakses informasi internal secara cepat, cerdas,<br /> dan aman. Dengan pencarian kontekstual dan <br />otomatisasi dokumen, brilian.ai mempercepat <br />pengambilan keputusan dan meningkatkan efisiensi<br /> kerja.
+          </p>
+        </div>
+      </section>
+
+      {/* AI-powered knowledge management platform Section - Content 4 */}
+      <section className="py-20 bg-gradient-to-b from-slate-800 via-slate-900 to-blue-900 relative">
+        {/* Background Stars */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/Image-BintangBG.png"
+            alt="Star"
+            className="absolute top-12 right-12 w-6 h-6 animate-pulse opacity-30"
+          />
+          <img
+            src="/images/Image-BintangBG.png"
+            alt="Star"
+            className="absolute bottom-16 left-16 w-6 h-6 animate-pulse delay-800 opacity-35"
+          />
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white mb-4">
+              AI-powered knowledge<br /> management platform
+            </h2>
+          </div>
+
+
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            {/* Tanya Apa Aja */}
+            <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30 hover:bg-blue-900/70 transition-all duration-300">
+              <h3 className="text-xl font-inter font-medium text-white mb-4">Tanya Apa Aja</h3>
+              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+                Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
+              </p>
+              <div className="bg-dark-800/50 rounded-lg p-4">
+                <img src="/images/Image-Tanyaapasaja.png" alt="Chat Interface" className="w-full h-24 object-cover rounded" />
+              </div>
+            </div>
+
+            {/* Buat Laporan */}
+            <div className="bg-blue-800/50 rounded-xl p-6 border border-blue-400/30 hover:bg-blue-800/70 transition-all duration-300">
+              <h3 className="text-xl font-inter font-medium text-white mb-4">Buat Laporan</h3>
+              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+                Get trusted answers from every corner of your Workspace, instantly and in full context.
+              </p>
+              <div className="bg-dark-800/50 rounded-lg p-4">
+                <img src="/images/Image-Buatlaporan.png" alt="Report Generation" className="w-full h-24 object-cover rounded" />
+              </div>
+            </div>
+
+            {/* Analisis Laporan */}
+            <div className="bg-blue-800/50 rounded-xl p-6 border border-blue-400/30 hover:bg-blue-800/70 transition-all duration-300">
+              <h3 className="text-xl font-inter font-medium text-white mb-4">Analisis Laporan</h3>
+              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+                Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
+              </p>
+              <div className="bg-dark-800/50 rounded-lg p-4">
+                <img src="/images/Image-Analisislaporan.png" alt="Report Analysis" className="w-full h-24 object-cover rounded" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Riset Market */}
+            <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30 hover:bg-blue-900/70 transition-all duration-300">
+              <h3 className="text-xl font-inter font-medium text-white mb-4">Riset Market</h3>
+              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+                Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
+              </p>
+              <div className="bg-dark-800/50 rounded-lg p-4">
+                <img src="/images/Image-Risetmarket.png" alt="Market Research" className="w-full h-24 object-cover rounded" />
+              </div>
+            </div>
+
+            {/* Pikirin Ide */}
+            <div className="bg-blue-800/50 rounded-xl p-6 border border-blue-400/30 hover:bg-blue-800/70 transition-all duration-300">
+              <h3 className="text-xl font-inter font-medium text-white mb-4">Pikirin Ide</h3>
+              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+                Get trusted answers from every corner of your Workspace, instantly and in full context.
+              </p>
+              <div className="bg-dark-800/50 rounded-lg p-4">
+                <img src="/images/Image-Pikirinide.png" alt="Ideas Generation" className="w-full h-24 object-cover rounded" />
+              </div>
+            </div>
+
+            {/* Rangkumin Meeting */}
+            <div className="bg-blue-800/50 rounded-xl p-6 border border-blue-400/30 hover:bg-blue-800/70 transition-all duration-300">
+              <h3 className="text-xl font-inter font-medium text-white mb-4">Rangkumin Meeting</h3>
+              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+                Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
+              </p>
+              <div className="bg-dark-800/50 rounded-lg p-4">
+                <img src="/images/Image-Rangkuminmeet.png" alt="Meeting Summary" className="w-full h-24 object-cover rounded" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Rangkum.AI Section - Content 5 */}
+      <section className="py-20 bg-gradient-to-b from-blue-900 via-black to-slate-900 relative">
+        {/* Background Stars */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/Image-BintangBG.png"
+            alt="Star"
+            className="absolute top-12 right-12 w-auto h-20 animate-pulse opacity-30"
+          />
+          <img
+            src="/images/Image-BintangBG.png"
+            alt="Star"
+            className="absolute bottom-16 left-16 w-auto h-20 animate-pulse delay-800 opacity-35"
+          />
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="flex items-center justify-center mb-2">
+            <img
+              src="/images/Image-BintangBG.png"
+              alt="Star"
+              className="w-auto h-20 mr-4 animate-pulse"
+            />
+            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white">
+              Rangkum.AI
+            </h2>
+            <img
+              src="/images/Image-BintangBG.png"
+              alt="Star"
+              className="w-auto h-20 ml-4 animate-pulse delay-300"
+            />
+          </div>
+
+          <p className="text-lg text-white/80 mb-10 max-w-3xl mx-auto font-inter font-normal">
+            Intelligent Document Processing (IDP) <br />yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
           </p>
 
-          <div className="border-2 border-dashed border-blue-500/30 rounded-lg p-8">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              {/* Tanya Apa Aja */}
-              <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Tanya Apa Aja</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Tanyaapasaja.png" alt="Chat Interface" className="w-full h-24 object-cover rounded" />
-                </div>
-              </div>
+          <p className="text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed font-inter font-medium">
+            Rangkum.ai adalah platform Intelligent Document Processing (IDP) berbasis AI yang membantu organisasi mengotomatisasi ekstraksi, pemrosesan, dan peringkasan dokumen, dari PDF, formulir, hingga laporan kompleks
+          </p>
 
-              {/* Buat Laporan */}
-              <div className="bg-orange-900/50 rounded-xl p-6 border border-orange-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Buat Laporan</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Get trusted answers from every corner of your Workspace, instantly and in full context.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Buatlaporan.png" alt="Report Generation" className="w-full h-24 object-cover rounded" />
-                </div>
-              </div>
-
-              {/* Analisis Laporan */}
-              <div className="bg-green-900/50 rounded-xl p-6 border border-green-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Analisis Laporan</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Analisislaporan.png" alt="Report Analysis" className="w-full h-24 object-cover rounded" />
-                </div>
+          <div className="grid md:grid-cols-3 gap-12 mb-12 mt-8">
+            {/* Intelligent Document Processing */}
+            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-blue-500/30 hover:bg-blue-900/70 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(139,92,246,0.3)' }}>
+              <h3
+                className="text-l font-inter font-normal text-purple-300 text-left leading-snug drop-shadow-sm mb-4"
+                style={{ textShadow: '0 0 4px rgba(168,85,247,0.4)' }}
+              >
+                Intelligent Document Processing (IDP) <br /> dan OCR AI Canggih
+              </h3>
+              <div className="bg-[#1E293B] p-3 rounded-lg flex justify-center items-center">
+                <img src="/images/Image-IDP.png" alt="IDP Processing" className="h-28 object-contain" />
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Riset Market */}
-              <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Riset Market</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Risetmarket.png" alt="Market Research" className="w-full h-24 object-cover rounded" />
-                </div>
+            {/* Otomatisasi Alur Kerja */}
+            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 mt-8 border border-cyan-400/30 hover:bg-blue-900/70 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(34,211,238,0.3)' }}>
+              <h3
+                className="text-l font-inter font-normal text-cyan-300 text-left leading-snug drop-shadow-sm mb-4"
+                style={{ textShadow: '0 0 4px rgba(34,211,238,0.4)' }}
+              >
+                Otomatisasi Alur Kerja dan <br /> Integrasi Sistem
+              </h3>
+              <div className="bg-[#1E293B] p-3 rounded-lg flex justify-center items-center">
+                <img src="/images/Image-Otomatisasi.png" alt="Workflow Automation" className="h-28 object-contain" />
               </div>
+            </div>
 
-              {/* Pikirin Ide */}
-              <div className="bg-orange-900/50 rounded-xl p-6 border border-orange-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Pikirin Ide</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Get trusted answers from every corner of your Workspace, instantly and in full context.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Pikirinide.png" alt="Ideas Generation" className="w-full h-24 object-cover rounded" />
-                </div>
-              </div>
-
-              {/* Rangkumin Meeting */}
-              <div className="bg-green-900/50 rounded-xl p-6 border border-green-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Rangkumin Meeting</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Rangkuminmeet.png" alt="Meeting Summary" className="w-full h-24 object-cover rounded" />
-                </div>
+            {/* Integrasi Mudah */}
+            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-orange-500/30 hover:bg-blue-900/70 transition-all duration-300"
+              style={{ boxShadow: '0 0 20px 4px rgba(251,146,60,0.3)' }}>
+              <h3
+                className="text-l font-inter font-normal text-orange-300 text-left leading-snug drop-shadow-sm mb-4"
+                style={{ textShadow: '0 0 4px rgba(251,146,60,0.4)' }}
+              >
+                Integrasi Mudah
+              </h3>
+              <div className="bg-[#1E293B] p-3 rounded-lg flex justify-center items-center">
+                <img src="/images/Image-Integrasi.png" alt="Easy Integration" className="h-28 object-contain" />
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-12">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+          {/* CTA Button */}
+          <div className="flex justify-center mt-16">
+            <button className="flex justify-center items-center h-10 px-10 text-white bg-blue-600/20 border border-blue-500/30 rounded-md mb-12 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light mt-12">
               Book a demo
             </button>
           </div>
+
         </div>
       </section>
 
-      {/* AI-powered knowledge management platform Section */}
-      <section className="py-20 bg-gradient-to-b from-dark-900 to-blue-900 relative">
+      {/* Blog & Case Studies Section - Content 6 */}
+      <section className="py-20 bg-gradient-to-b from-slate-900 via-blue-900 to-black relative">
         {/* Background Stars */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 pointer-events-none">
           <img
             src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute top-12 right-12 w-4 h-4 animate-pulse opacity-30"
-          />
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute bottom-16 left-16 w-5 h-5 animate-pulse delay-800 opacity-35"
+            alt="Stars"
+            className="absolute bottom-16 right-16 w-6 h-6 animate-pulse opacity-35"
           />
         </div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Container */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              AI-powered knowledge management platform
+            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white">
+              <span className="text-white">Blog</span> <span className="text-gray-300">&amp; Case Studies</span>
             </h2>
           </div>
 
-          <div className="border-2 border-dashed border-blue-500/30 rounded-lg p-8">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              {/* Tanya Apa Aja */}
-              <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Tanya Apa Aja</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Tanyaapasaja.png" alt="Chat Interface" className="w-full h-24 object-cover rounded" />
-                </div>
-              </div>
+          {/* Blog Cards Centered */}
+          <div className="flex flex-col md:flex-row justify-center items-stretch gap-10">
 
-              {/* Buat Laporan */}
-              <div className="bg-orange-900/50 rounded-xl p-6 border border-orange-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Buat Laporan</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Get trusted answers from every corner of your Workspace, instantly and in full context.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Buatlaporan.png" alt="Report Generation" className="w-full h-24 object-cover rounded" />
-                </div>
-              </div>
-
-              {/* Analisis Laporan */}
-              <div className="bg-green-900/50 rounded-xl p-6 border border-green-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Analisis Laporan</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Analisislaporan.png" alt="Report Analysis" className="w-full h-24 object-cover rounded" />
-                </div>
+            {/* Blog 1 */}
+            <div className="w-full max-w-md rounded-xl overflow-hidden border border-blue-500/30 bg-black/50 shadow-[0_0_40px_5px_rgba(59,130,246,0.4)] hover:shadow-[0_0_60px_8px_rgba(59,130,246,0.6)] transition-all duration-300">
+              <div className="p-4">
+                <h3 className="text-2xl font-semibold text-blue-400 mb-4 tracking-wide text-center">BLOG 1</h3>
+                <img
+                  src="/images/Image-Blog1.png"
+                  alt="Blog 1"
+                  className="w-full h-[220px] object-cover rounded-lg"
+                />
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Riset Market */}
-              <div className="bg-blue-900/50 rounded-xl p-6 border border-blue-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Riset Market</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Risetmarket.png" alt="Market Research" className="w-full h-24 object-cover rounded" />
-                </div>
-              </div>
-
-              {/* Pikirin Ide */}
-              <div className="bg-orange-900/50 rounded-xl p-6 border border-orange-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Pikirin Ide</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Get trusted answers from every corner of your Workspace, instantly and in full context.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Pikirinide.png" alt="Ideas Generation" className="w-full h-24 object-cover rounded" />
-                </div>
-              </div>
-
-              {/* Rangkumin Meeting */}
-              <div className="bg-green-900/50 rounded-xl p-6 border border-green-500/30">
-                <h3 className="text-xl font-semibold text-white mb-4">Rangkumin Meeting</h3>
-                <p className="text-white/70 mb-4 text-sm">
-                  Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
-                </p>
-                <div className="bg-dark-800/50 rounded-lg p-4">
-                  <img src="/images/Image-Rangkuminmeet.png" alt="Meeting Summary" className="w-full h-24 object-cover rounded" />
-                </div>
+            {/* Blog 2 */}
+            <div className="w-full max-w-md rounded-xl overflow-hidden border border-blue-500/30 bg-black/50 shadow-[0_0_40px_5px_rgba(59,130,246,0.4)] hover:shadow-[0_0_60px_8px_rgba(59,130,246,0.6)] transition-all duration-300">
+              <div className="p-4">
+                <h3 className="text-2xl font-semibold text-blue-400 mb-4 tracking-wide text-center">BLOG 2</h3>
+                <img
+                  src="/images/Image-Blog2.png"
+                  alt="Blog 2"
+                  className="w-full h-[220px] object-cover rounded-lg"
+                />
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* Blog & Case Studies Section */}
-      <section className="py-20 bg-gradient-to-b from-dark-900 to-blue-900 relative">
-        {/* Background Stars */}
-        <div className="absolute inset-0">
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute top-14 left-14 w-4 h-4 animate-pulse opacity-30"
-          />
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute bottom-16 right-16 w-5 h-5 animate-pulse delay-900 opacity-35"
-          />
-        </div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Blog & Case Studies
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-dark-800/50 rounded-xl overflow-hidden border-2 border-blue-500/30">
-              <img
-                src="/images/Image-Blog1.png"
-                alt="Blog Post 1"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-400 mb-2">BLOG 1</h3>
-              </div>
-            </div>
-
-            <div className="bg-dark-800/50 rounded-xl overflow-hidden border-2 border-blue-500/30">
-              <img
-                src="/images/Image-Blog2.png"
-                alt="Blog Post 2"
-                className="w-full h-40 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-400 mb-2">BLOG 2</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
-              Book a demo
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Final Section with Gradient Background */}
-      <section className="py-20 bg-gradient-to-b from-blue-900 via-blue-600 to-blue-900 relative">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
-            Book a demo
-          </button>
-        </div>
-      </section>
     </div>
   );
 }
