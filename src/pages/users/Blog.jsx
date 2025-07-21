@@ -15,11 +15,11 @@ export default function Blog() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-14">
-                    <h1 className="text-4xl font-bold text-[#489CFF] mb-3 drop-shadow" style={{ textShadow: '0 0 8px #2563eb55' }}>
-                        Manusia AI Insights
+                    <h1 className="text-4xl font-bold text-white mb-3 drop-shadow" style={{ textShadow: '0 0 8px #2563eb55' }}>
+                        Stay Ahead with Manusia.AI Insights
                     </h1>
                     <p className="text-lg text-white/70 mb-6">
-                        Stay ahead of the curve with our curated articles on AI, IT trends, automation, and real-world case studies.
+                        Stay ahead of the curve with our curated articles on AI, IT trends, automation, and real-world case studies
                     </p>
                     <div className="border-t border-blue-900/40 my-6"></div>
                 </div>

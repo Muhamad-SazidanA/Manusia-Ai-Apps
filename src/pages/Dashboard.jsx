@@ -37,7 +37,7 @@ export default function Dashboard() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-white/90 mb-4 max-w-[520px] mx-auto font-inter font-normal leading-[1.6]">
+          <p className="text-lg md:text-xl font-inter font-normal text-white/90 mb-4 max-w-[520px] mx-auto leading-[1.6]">
             From Data to Insights: Tailored AI Solutions for <br />Enterprise Growth
           </p>
 
@@ -135,7 +135,7 @@ export default function Dashboard() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white mb-8">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white mb-8">
               What is Manusia.AI
             </h2>
           </div>
@@ -147,7 +147,7 @@ export default function Dashboard() {
                 {/* Hexagon Network Image - Made 2x larger */}
                 <div className="flex items-center justify-center">
                   <img
-                    src="/images/hexsagon-ai.png"
+                    src="/images/hexsagon-ai.svg"
                     alt="hexagon product network"
                     className="w-full max-w-8xl h-auto object-contain scale-[2]"
                   />
@@ -157,7 +157,7 @@ export default function Dashboard() {
 
             {/* Left Content */}
             <div className="space-y-6 lg:order-1">
-              <p className="text-base md:text-lg text-white/90 leading-relaxed font-inter font-normal">
+              <p className="text-lg md:text-xl font-inter font-normal text-white/90 leading-relaxed">
                 Manusia.AI adalah perusahaan konsultan dan custom AI<br />
                 yang berbasis di Jakarta, yang berfokus pada<br />
                 penyediaan layanan konsultasi strategi AI dan<br />
@@ -175,44 +175,44 @@ export default function Dashboard() {
 
       {/* Brilian.AI Section - Content 3 */}
       <section className="py-20 bg-gradient-to-b from-black via-blue-900 to-slate-800 relative">
-        {/* Background Stars */}
-        <div className="absolute inset-0">
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute top-12 right-12 w-auto h-20 animate-pulse opacity-30"
-          />
-          <img
-            src="/images/Image-BintangBG.png"
-            alt="Star"
-            className="absolute bottom-16 left-16 w-auto h-20 animate-pulse delay-800 opacity-35"
-          />
-        </div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="flex items-center justify-center mb-8">
-            <img
-              src="/images/Image-BintangBG.png"
-              alt="Star"
-              className="w-auto h-20 mr-2 animate-pulse"
-            />
-            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white">
-              Brilian.AI
-            </h2>
-            <img
-              src="/images/Image-BintangBG.png"
-              alt="Star"
-              className="w-auto h-20 ml-2 animate-pulse delay-300"
-            />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Title & Subtitle */}
+          <div className="text-center mb-4">
+            <div className="flex justify-center items-center gap-4 mb-2">
+              <img src="/images/Image-BintangBG.png" alt="" className="w-24 h-24 animate-pulse opacity-80" />
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white">Brilian.AI</h2>
+              <img src="/images/Image-BintangBG.png" alt="" className="w-24 h-24 animate-pulse opacity-80" />
+            </div>
+            <div className="text-lg md:text-xl font-inter font-normal text-white/80 mb-2">
+              AI-powered knowledge management platform<br />
+              yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
+            </div>
           </div>
-
-          <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto font-inter font-normal">
-            AI-powered knowledge management platform <br />yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
-          </p>
-
-          <p className="text-white/90 mb-12 max-w-8xl mx-auto leading-relaxed font-inter font-medium">
-            brilian.ai merupakan AI-powered knowledge<br /> management platform yang membantu organisasi<br /> mengakses informasi internal secara cepat, cerdas,<br /> dan aman. Dengan pencarian kontekstual dan <br />otomatisasi dokumen, brilian.ai mempercepat <br />pengambilan keputusan dan meningkatkan efisiensi<br /> kerja.
-          </p>
+          {/* 2 Kolom */}
+          <div className="grid md:grid-cols-2 gap-6 items-center">
+            {/* Kiri: Gambar */}
+            <div className="flex justify-center md:justify-end">
+              <img
+                src="/images/BrilianContentDS.svg"
+                alt="Brilian.AI"
+                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
+                style={{ maxHeight: 400 }}
+              />
+            </div>
+            {/* Kanan: Deskripsi */}
+            <div className="text-left">
+              <div className="text-lg md:text-xl font-inter font-normal text-white/90 leading-relaxed ">
+                Brilian.Ai merupakan AI-powered knowledge<br />
+                management platformyang membantu organisasi<br />
+                mengakses informasi internal secara cepat,cerdas,<br />
+                dan aman.Dengan pencarian kontekstual dan<br />
+                otomatisasi dokumen, brilian.ai mempercepat<br />
+                pengambilan keputusan dan meningkatkan efisiensi<br />
+                kerja.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -234,7 +234,7 @@ export default function Dashboard() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white mb-4">
               AI-powered knowledge<br /> management platform
             </h2>
           </div>
@@ -242,7 +242,7 @@ export default function Dashboard() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Tanya Apa Aja - Blue Color (#489CFF) */}
             <div className="bg-slate-900/80 rounded-xl p-6 border border-[#489CFF]/30 hover:border-[#489CFF]/60 hover:bg-[#489CFF]/10 transition-all duration-300"
-              style={{ boxShadow: '0 0 20px 4px rgba(72, 156, 255, 0.3)' }}>
+              style={{ boxShadow: '0 0 20px 4px rgba(72,156,255,0.3)' }}>
               <h3 className="text-xl font-inter font-medium text-[#489CFF] mb-4">Tanya Apa Aja</h3>
               <p className="text-white/70 mb-4 text-sm font-inter font-normal">
                 Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
@@ -280,7 +280,7 @@ export default function Dashboard() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Riset Market - Blue Color (#489CFF) */}
             <div className="bg-slate-900/80 rounded-xl p-6 border border-[#489CFF]/30 hover:border-[#489CFF]/60 hover:bg-[#489CFF]/10 transition-all duration-300"
-              style={{ boxShadow: '0 0 20px 4px rgba(72, 156, 255, 0.3)' }}>
+              style={{ boxShadow: '0 0 20px 4px rgba(72,156,255,0.3)' }}>
               <h3 className="text-xl font-inter font-medium text-[#489CFF] mb-4">Riset Market</h3>
               <p className="text-white/70 mb-4 text-sm font-inter font-normal">
                 Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
@@ -314,6 +314,11 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
+          <div className="flex justify-center mt-4">
+            <button className="flex justify-center items-center h-10 px-10 text-white bg-blue-600/20 border border-blue-500/30 rounded-md mb-12 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light mt-12">
+              Book a demo
+            </button>
+          </div>
         </div>
       </section>
 
@@ -340,7 +345,7 @@ export default function Dashboard() {
               alt="Star"
               className="w-auto h-20 mr-4 animate-pulse"
             />
-            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white">
               Rangkum.AI
             </h2>
             <img
@@ -392,7 +397,7 @@ export default function Dashboard() {
               style={{ boxShadow: '0 0 20px 4px rgba(251,146,60,0.3)' }}>
               <h3
                 className="text-l font-inter font-normal text-orange-300 text-left text-[#FC6D2D] leading-snug drop-shadow-sm mb-4"
-                style={{ textShadow: '0 0 4px rgba(251,146,60,0.4)' }} 
+                style={{ textShadow: '0 0 4px rgba(251,146,60,0.4)' }}
               >
                 Integrasi Mudah
               </h3>
@@ -403,7 +408,7 @@ export default function Dashboard() {
           </div>
 
           {/* CTA Button */}
-          <div className="flex justify-center mt-16">
+          <div className="flex justify-center mt-4  ">
             <button className="flex justify-center items-center h-10 px-10 text-white bg-blue-600/20 border border-blue-500/30 rounded-md mb-12 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light mt-12">
               Book a demo
             </button>
@@ -411,8 +416,138 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* Blog & Case Studies Section - Content 6 */}
+      {/* Industries We Serve / Use Cases Rangkum.AI */}
       <section className="py-20 bg-gradient-to-b from-slate-900 via-blue-900 to-black relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl md:text-5xl font-inter font-semibold text-white mb-2">
+              Industries We Serve
+            </h2>
+            <h3 className="text-2xl md:text-3xl font-inter font-normal text-gray-200">
+              Use Cases Rangkum.AI
+            </h3>
+          </div>
+
+          {/* Cards Grid - Row 1: 3 cards dengan ukuran sama */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* Finance Card */}
+            <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#0075FF]/50 hover:border-[#0075FF]/80 transition-all duration-300 h-48 flex flex-col"
+              style={{ boxShadow: '0 0 30px 8px rgba(0,117,255,0.3)' }}>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-[#0075FF]/20 rounded-lg flex items-center justify-center">
+                  <i className="fa-solid fa-coins text-[#0075FF] text-lg"></i>
+                </div>
+                <h4 className="text-xl font-bold text-[#0075FF]">Finance</h4>
+              </div>
+              <div className="text-white text-sm font-medium mb-3">Accounts Payable (AP) Automation</div>
+              <ul className="text-white/80 text-xs space-y-2 flex-1">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#0075FF] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Memastikan verifikasi tepat invoice hingga PO</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#0075FF] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Mengurangi kesalahan pencatatan & risk pajak dari mismatch invoice</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Purchasing Card */}
+            <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#10E0C1]/50 hover:border-[#10E0C1]/80 transition-all duration-300 h-48 flex flex-col"
+              style={{ boxShadow: '0 0 30px 8px rgba(16,224,193,0.3)' }}>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-[#10E0C1]/20 rounded-lg flex items-center justify-center">
+                  <i className="fa-solid fa-cart-shopping text-[#10E0C1] text-lg"></i>
+                </div>
+                <h4 className="text-xl font-bold text-[#10E0C1]">Purchasing</h4>
+              </div>
+              <div className="text-white text-sm font-medium mb-3">Purchase Order (PO) Automation</div>
+              <ul className="text-white/80 text-xs space-y-2 flex-1">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#10E0C1] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Pembacaan dokumen/approval/validasi harga PO lebih cepat</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#10E0C1] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Hemat waktu & integrasi approval purchasing secara lebih otomatis</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Sales Card */}
+            <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#FA12E3]/50 hover:border-[#FA12E3]/80 transition-all duration-300 h-48 flex flex-col"
+              style={{ boxShadow: '0 0 30px 8px rgba(250,18,227,0.3)' }}>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-[#FA12E3]/20 rounded-lg flex items-center justify-center">
+                  <i className="fa-solid fa-user-plus text-[#FA12E3] text-lg"></i>
+                </div>
+                <h4 className="text-xl font-bold text-[#FA12E3]">Sales</h4>
+              </div>
+              <div className="text-white text-sm font-medium mb-3">Customer Onboarding Automation</div>
+              <ul className="text-white/80 text-xs space-y-2 flex-1">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#FA12E3] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Mempercepat proses pengenalan customer & kunci dalam bisnis digital</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#FA12E3] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Langsung terhubung dengan CRM untuk proses follow-up otomatis</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Row 2: 2 cards dengan ukuran sama, centered */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Manufacture Card */}
+            <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#AB7AFF]/50 hover:border-[#AB7AFF]/80 transition-all duration-300"
+              style={{ boxShadow: '0 0 30px 8px rgba(171,122,255,0.3)' }}>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-[#AB7AFF]/20 rounded-lg flex items-center justify-center">
+                  <i className="fa-solid fa-industry text-[#AB7AFF] text-lg"></i>
+                </div>
+                <h4 className="text-xl font-bold text-[#AB7AFF]">Manufacture</h4>
+              </div>
+              <div className="text-white text-sm font-medium mb-3">Goods Receipt & Stock Reconciliation</div>
+              <ul className="text-white/80 text-xs space-y-2">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#AB7AFF] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Monitoring stok otomatis dari dokumen DO dan SJ secara real-time</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#AB7AFF] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Mempercepat proses validasi dan update inventory harian</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Human Resource Card */}
+            <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#FC6D2D]/50 hover:border-[#FC6D2D]/80 transition-all duration-300"
+              style={{ boxShadow: '0 0 30px 8px rgba(252,109,45,0.3)' }}>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-[#FC6D2D]/20 rounded-lg flex items-center justify-center">
+                  <i className="fa-solid fa-users text-[#FC6D2D] text-lg"></i>
+                </div>
+                <h4 className="text-xl font-bold text-[#FC6D2D]">Human Resource</h4>
+              </div>
+              <div className="text-white text-sm font-medium mb-3">HR Onboarding Document Automation</div>
+              <ul className="text-white/80 text-xs space-y-2">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#FC6D2D] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Digitalisasi dokumen onboarding karyawan secara otomatis</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-[#FC6D2D] rounded-full mt-1.5 flex-shrink-0"></div>
+                  <span>Ekstraksi data (ID, CV, dll) dan verifikasi otomatis HRIS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog & Case Studies Section - Content 6 */}
+      <section className="py-20 bg-gradient-to-b from-black via-blue-900 to-black relative">
         {/* Background Stars */}
         <div className="absolute inset-0 pointer-events-none">
           <img

@@ -12,7 +12,7 @@ export default function DemoEmail() {
                         }}>
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Contact Us</h2>
                         <p className="text-white/70 text-sm mb-6">
-                            Don&apos;t have time to call? Send your enquiry to the Manusia.AI team and we&apos;ll get back to you quickly. If you do not receive a response, please reach out via WhatsApp.
+                            Don&apos;t have time to call? Send your enquiry to the Manusia.AI team and we&apos;ll <br />get back to you quickly. If you do not receive a response, please reach out via WhatsApp.
                         </p>
                         <form className="space-y-4">
                             <div>
@@ -59,24 +59,15 @@ export default function DemoEmail() {
 
                 {/* Right Side Text */}
                 <div className="flex flex-col justify-center items-center md:items-start px-0 md:px-10 md:pl-24 mt-10 md:mt-0">
-                    <div className="mb-6">
-                        <svg width="56" height="56" fill="none" className="mx-auto md:mx-0">
-                            <g filter="url(#glow)">
-                                <path d="M28 10v5M28 41v5M10 28h5M41 28h5M18.5 18.5l3.5 3.5M34.5 34.5l3.5 3.5M18.5 37.5l3.5-3.5M34.5 21.5l3.5-3.5" stroke="#489CFF" strokeWidth="2" strokeLinecap="round" />
-                            </g>
-                            <defs>
-                                <filter id="glow" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse">
-                                    <feGaussianBlur stdDeviation="2" result="blur" />
-                                    <feMerge>
-                                        <feMergeNode in="blur" />
-                                        <feMergeNode in="SourceGraphic" />
-                                    </feMerge>
-                                </filter>
-                            </defs>
-                        </svg>
+                    <div className="absolute inset-0">
+                        <img
+                            src="/images/Image-BintangBG.png"
+                            alt="Star"
+                            className="absolute top-40 right-8 w-auto h-20 animate-pulse delay-500 opacity-30"
+                        />
                     </div>
                     <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center md:text-left leading-tight">
-                        Bring Your Ideas to Life <br/> with Manusia.AI.
+                        Bring Your Ideas to Life <br /> with Manusia.AI.
                     </h1>
                     <p className="text-white/80 text-sm md:text-base mt-2 text-center md:text-left max-w-md">
                         Reach out today — let&apos;s craft intelligent solutions that accelerate your business transformation.

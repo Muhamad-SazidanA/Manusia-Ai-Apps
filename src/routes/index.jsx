@@ -3,8 +3,9 @@ import Template from "../layout/Template";
 import Dashboard from "../pages/Dashboard";
 import Blog from "../pages/users/Blog";
 import DemoEmail from "../pages/users/Demo-Email";
-import BrilianAI from "../pages/users/BrilianAI";
+import BrilianAI from "../pages/users/brilian-ai/BrilianAI";
 import RangkumAI from "../pages/users/RangkumAI";
+import Industries from "../pages/users/Industries";
 
 export const router = createBrowserRouter([
     {
@@ -28,8 +29,12 @@ export const router = createBrowserRouter([
                 element: <BrilianAI />,
             },
             {
-                path: "rangkum-ai",
+                path: "rangkum-ai", 
                 element: <RangkumAI />,
+            },
+            {
+                path: "industries",
+                element: <Industries />,
             },
             {
                 path: "*",

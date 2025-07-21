@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 export default function Template() {
+    const [activeTab, setActiveTab] = useState('null');
+
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900 text-white">
             {/* Header */}
-            <header className="glass-effect sticky top-0 z-50 border-b border-primary-500/20">
+            <header
+                className="sticky top-0 z-50 border-b border-primary-500/20"
+                style={{
+                    background: 'rgba(3, 34, 112, 1)',
+                    borderBottom: '1px solid rgba(74, 158, 255, 0.2)',
+                }}
+            >
                 <nav className="py-3">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex items-center justify-between">
@@ -23,29 +31,147 @@ export default function Template() {
                             {/* Navigation Menu */}
                             <ul className="hidden md:flex items-center space-x-12 text-white/70 text-sm font-light">
                                 <li>
-                                    <a href="#about" className="hover:text-white transition-colors duration-300">About</a>
+                                    <Link
+                                        to="/"
+                                        className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200
+                hover:bg-[#0075FF] hover:text-white"
+                                    >
+                                        About
+                                    </Link>
                                 </li>
                                 <li className="relative group">
-                                    <a href="#products" className="hover:text-white transition-colors duration-300 flex items-center space-x-1">
+                                    <div className="flex items-center space-x-1 rounded-xl px-2 py-1 text-sm cursor-pointer hover:bg-[#0075FF] hover:text-white">
                                         <span>Products</span>
                                         <i className="fas fa-chevron-down text-xs"></i>
-                                    </a>
-                                    <ul className="absolute top-full left-0 mt-2 glass-effect rounded-xl p-2 min-w-[180px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                                        <li>
-                                            <Link to="/brilian-ai" className="block px-4 py-2 text-white/80 hover:text-white transition-all duration-300">
-                                                Brilian.AI
+                                    </div>
+                                    <div
+                                        className={`
+      absolute top-full left-0 mt-2 rounded-2xl z-50 shadow-lg overflow-hidden
+      transition-all duration-300
+      opacity-0 invisible group-hover:opacity-100 group-hover:visible
+      ${activeTab ? 'min-w-[520px] p-3' : 'min-w-[180px] p-1'}
+      flex
+    `}
+                                        style={{
+                                            background: 'rgba(20, 30, 55, 0.55)',
+                                            backdropFilter: 'blur(18px)',
+                                            WebkitBackdropFilter: 'blur(18px)',
+                                            boxShadow: '0 0 16px 2px #4A9EFF, 0 0 0 1px #1C64DD',
+                                            border: '1.5px solid #2196FF',
+                                            fontSize: '0.93rem',
+                                            alignItems: 'flex-start'
+                                        }}
+                                        onMouseLeave={() => setActiveTab(null)}
+                                    >
+                                        {/* Tab Switcher dengan Link */}
+                                        <div className="flex flex-col gap-2 min-w-[160px]">
+                                            <Link
+                                                to="/brilian-ai"
+                                                className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-base transition-all cursor-pointer
+      ${activeTab === 'brilian' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent text-white/80 hover:bg-[#2196FF]/20'}`}
+                                                onMouseEnter={() => setActiveTab('brilian')}
+                                            >
+                                                <i className="fa-solid fa-brain text-lg"></i> Brilian.AI
+                                                <i
+                                                    className={`fa-solid ${activeTab === 'brilian' ? 'fa-chevron-right' : 'fa-chevron-down'
+                                                        } text-xs ml-auto transition-all duration-200`}
+                                                ></i>
                                             </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/rangkum-ai" className="block px-4 py-2 text-white/80 hover:text-white transition-all duration-300">
-                                                Rangkum.AI
+                                            
+                                            <Link
+                                                to="/rangkum-ai"
+                                                className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-base transition-all cursor-pointer
+      ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent text-white/80 hover:bg-[#2196FF]/20'}`}
+                                                onMouseEnter={() => setActiveTab('rangkum')}
+                                            >
+                                                <i className="fa-solid fa-file-lines text-lg"></i> Rangkum.AI
+                                                <i
+                                                    className={`fa-solid ${activeTab === 'rangkum' ? 'fa-chevron-right' : 'fa-chevron-down'
+                                                        } text-xs ml-auto transition-all duration-200`}
+                                                ></i>
                                             </Link>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                        {/* Industries */}
+                                        {activeTab === 'brilian' && (
+                                            <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 240, minHeight: 120 }}>
+                                                <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full">
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-landmark text-xl"></i>
+                                                        <span>
+                                                            BANK<br />dan Multifinance
+                                                        </span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-hospital text-xl"></i>
+                                                        <span>Rumah Sakit</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-hand-holding-medical text-xl"></i>
+                                                        <span>Insurance</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-users text-xl"></i>
+                                                        <span>
+                                                            Human<br />Resource
+                                                        </span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-basket-shopping text-xl"></i>
+                                                        <span>FMGC</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
+                                        {activeTab === 'rangkum' && (
+                                            <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 240, minHeight: 120 }}>
+                                                <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full">
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-industry text-xl"></i>
+                                                        <span>Manufacturing</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-store text-xl"></i>
+                                                        <span>Retail</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-basket-shopping text-xl"></i>
+                                                        <span>FMCG</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-car text-xl"></i>
+                                                        <span>Asuransi</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-users text-xl"></i>
+                                                        <span>
+                                                            Human<br />Resource
+                                                        </span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                        <i className="fa-solid fa-heart-pulse text-xl"></i>
+                                                        <span>Healthcare</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
                                 </li>
-                                <li><a href="#industries" className="hover:text-white transition-colors duration-300">Industries</a></li>
-                                <li><Link to="/blog" className="hover:text-white transition-colors duration-300">Blog</Link></li>
-                                <li><a href="#pricing" className="hover:text-white transition-colors duration-300">Pricing</a></li>
+                                <li>
+                                    <Link
+                                        to="/industries"
+                                        className="rounded-xl px-4 py-2 transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
+                                    >
+                                        Industries
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to="/blog"
+                                        className="rounded-xl px-4 py-2 transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
+                                    >
+                                        Blog
+                                    </Link>
+                                </li>
                             </ul>
 
                             {/* Demo Button */}
@@ -97,14 +223,14 @@ export default function Template() {
                                 </h4>
                                 <ul className="space-y-2">
                                     <li>
-                                        <a href="#brilian" className="flex items-center gap-2 text-white/70 hover:text-primary-500 text-sm transition-all">
+                                        <Link to="/brilian-ai" className="flex items-center gap-2 text-white/70 hover:text-primary-500 text-sm transition-all">
                                             Brilian.AI
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="#rangkum" className="flex items-center gap-2 text-white/70 hover:text-primary-500 text-sm transition-all">
+                                        <Link to="/rangkum-ai" className="flex items-center gap-2 text-white/70 hover:text-primary-500 text-sm transition-all">
                                             Rangkum.AI
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -112,6 +238,13 @@ export default function Template() {
                                 <h4 className="text-lg font-semibold text-white mb-4">
                                     Industries
                                 </h4>
+                                <ul className="space-y-2">
+                                    <li>
+                                        <Link to="/industries" className="text-white/70 hover:text-primary-500 text-sm transition-all">
+                                            All Industries
+                                        </Link>
+                                    </li>
+                                </ul>
                             </div>
                             <div className="min-w-[120px]">
                                 <h4 className="text-lg font-semibold text-white mb-4">
