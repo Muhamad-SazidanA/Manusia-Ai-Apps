@@ -33,25 +33,55 @@ export default function Template() {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200
-                hover:bg-[#0075FF] hover:text-white"
+                                        className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
                                     >
                                         About
                                     </Link>
                                 </li>
+                                {/* PRODUCTS DROPDOWN */}
                                 <li className="relative group">
-                                    <div className="flex items-center space-x-1 rounded-xl px-2 py-1 text-sm cursor-pointer hover:bg-[#0075FF] hover:text-white">
+                                    <div className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                         <span>Products</span>
                                         <i className="fas fa-chevron-down text-xs"></i>
                                     </div>
                                     <div
+                                        className="absolute top-full left-0 mt-2 rounded-2xl z-50 shadow-lg overflow-hidden min-w-[180px] p-1 transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                                        style={{
+                                            background: 'rgba(20, 30, 55, 0.55)',
+                                            backdropFilter: 'blur(18px)',
+                                            WebkitBackdropFilter: 'blur(18px)',
+                                            boxShadow: '0 0 16px 2px #4A9EFF, 0 0 0 1px #1C64DD',
+                                            border: '1.5px solid #2196FF',
+                                            fontSize: '0.93rem',
+                                        }}
+                                    >
+                                        <Link
+                                            to="/brilian-ai"
+                                            className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
+                                        >
+                                            <i className="fa-solid fa-brain text-lg"></i> Brilian.AI
+                                        </Link>
+                                        <Link
+                                            to="/rangkum-ai"
+                                            className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
+                                        >
+                                            <i className="fa-solid fa-file-lines text-lg"></i> Rangkum.AI
+                                        </Link>
+                                    </div>
+                                </li>
+                                <li className="relative group">
+                                    <div className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
+                                        <span>Industries</span>
+                                        <i className="fas fa-chevron-down text-xs"></i>
+                                    </div>
+                                    <div
                                         className={`
-      absolute top-full left-0 mt-2 rounded-2xl z-50 shadow-lg overflow-hidden
-      transition-all duration-300
-      opacity-0 invisible group-hover:opacity-100 group-hover:visible
-      ${activeTab ? 'min-w-[520px] p-3' : 'min-w-[180px] p-1'}
-      flex
-    `}
+                                        absolute top-full left-0 mt-2 rounded-2xl z-50 shadow-lg overflow-hidden
+                                        transition-all duration-300
+                                        opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                        ${activeTab ? 'min-w-[520px] p-3' : 'min-w-[180px] p-1'}
+                                        flex
+                                        `}
                                         style={{
                                             background: 'rgba(20, 30, 55, 0.55)',
                                             backdropFilter: 'blur(18px)',
@@ -65,8 +95,7 @@ export default function Template() {
                                     >
                                         {/* Tab Switcher dengan Link */}
                                         <div className="flex flex-col gap-2 min-w-[160px]">
-                                            <Link
-                                                to="/brilian-ai"
+                                            <div
                                                 className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-base transition-all cursor-pointer
       ${activeTab === 'brilian' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent text-white/80 hover:bg-[#2196FF]/20'}`}
                                                 onMouseEnter={() => setActiveTab('brilian')}
@@ -76,12 +105,11 @@ export default function Template() {
                                                     className={`fa-solid ${activeTab === 'brilian' ? 'fa-chevron-right' : 'fa-chevron-down'
                                                         } text-xs ml-auto transition-all duration-200`}
                                                 ></i>
-                                            </Link>
-                                            
-                                            <Link
-                                                to="/rangkum-ai"
+                                            </div>
+
+                                            <div
                                                 className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-base transition-all cursor-pointer
-      ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent text-white/80 hover:bg-[#2196FF]/20'}`}
+                                                ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent text-white/80 hover:bg-[#2196FF]/20'}`}
                                                 onMouseEnter={() => setActiveTab('rangkum')}
                                             >
                                                 <i className="fa-solid fa-file-lines text-lg"></i> Rangkum.AI
@@ -89,11 +117,11 @@ export default function Template() {
                                                     className={`fa-solid ${activeTab === 'rangkum' ? 'fa-chevron-right' : 'fa-chevron-down'
                                                         } text-xs ml-auto transition-all duration-200`}
                                                 ></i>
-                                            </Link>
+                                            </div>
                                         </div>
                                         {/* Industries */}
                                         {activeTab === 'brilian' && (
-                                            <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 240, minHeight: 120 }}>
+                                            <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 340, minHeight: 180 }}>
                                                 <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full">
                                                     <div className="flex items-center gap-2 text-white text-sm font-semibold">
                                                         <i className="fa-solid fa-landmark text-xl"></i>
@@ -123,7 +151,7 @@ export default function Template() {
                                             </div>
                                         )}
                                         {activeTab === 'rangkum' && (
-                                            <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 240, minHeight: 120 }}>
+                                            <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 340, minHeight: 180 }}>
                                                 <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full">
                                                     <div className="flex items-center gap-2 text-white text-sm font-semibold">
                                                         <i className="fa-solid fa-industry text-xl"></i>
@@ -155,14 +183,6 @@ export default function Template() {
                                             </div>
                                         )}
                                     </div>
-                                </li>
-                                <li>
-                                    <Link
-                                        to="/industries"
-                                        className="rounded-xl px-4 py-2 transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
-                                    >
-                                        Industries
-                                    </Link>
                                 </li>
                                 <li>
                                     <Link

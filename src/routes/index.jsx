@@ -5,7 +5,6 @@ import Blog from "../pages/users/Blog";
 import DemoEmail from "../pages/users/Demo-Email";
 import BrilianAI from "../pages/users/brilian-ai/BrilianAI";
 import RangkumAI from "../pages/users/RangkumAI";
-import Industries from "../pages/users/Industries";
 
 export const router = createBrowserRouter([
     {
@@ -31,10 +30,6 @@ export const router = createBrowserRouter([
             {
                 path: "rangkum-ai", 
                 element: <RangkumAI />,
-            },
-            {
-                path: "industries",
-                element: <Industries />,
             },
             {
                 path: "*",
