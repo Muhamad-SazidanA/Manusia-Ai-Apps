@@ -123,12 +123,12 @@ export default function Template() {
                                         {activeTab === 'brilian' && (
                                             <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 340, minHeight: 180 }}>
                                                 <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full">
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    <Link to="/brilianai-banking" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-landmark text-xl"></i>
                                                         <span>
-                                                            BANK<br />dan Multifinance
+                                                            BANK dan<br />Multifinance
                                                         </span>
-                                                    </div>
+                                                    </Link>
                                                     <div className="flex items-center gap-2 text-white text-sm font-semibold">
                                                         <i className="fa-solid fa-hospital text-xl"></i>
                                                         <span>Rumah Sakit</span>

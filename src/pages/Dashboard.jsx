@@ -31,7 +31,7 @@ export default function Dashboard() {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
             Custom AI for Your<br />
             Real Business Challenges
           </h1>
