@@ -5,7 +5,11 @@ import Blog from "../pages/users/Blog";
 import DemoEmail from "../pages/users/Demo-Email";
 import BrilianAI from "../pages/users/brilian-ai/BrilianAI";
 import BrilianBanking from "../pages/users/brilian-ai/BrilianBanking";
+import BrilianInsurance from "../pages/users/brilian-ai/BrilianInsurance";
 import RangkumAI from "../pages/users/RangkumAI";
+import BrilianHospital from "../pages/users/brilian-ai/BrilianHospital";
+import BrilianHumanR from "../pages/users/brilian-ai/BrilianHumanR";
+import BrilianFMGC from "../pages/users/brilian-ai/BrilianFMGC";
 
 export const router = createBrowserRouter([
     {
@@ -33,8 +37,24 @@ export const router = createBrowserRouter([
                 element: <BrilianBanking />,
             },
             {
+                path: "brilianai-insurance",
+                element: <BrilianInsurance />
+            },
+            {
                 path: "rangkum-ai",
                 element: <RangkumAI />,
+            },
+            {
+                path: "brilianai-hospital",
+                element: <BrilianHospital />,
+            },
+            {
+                path: "brilianai-humanr",
+                element: <BrilianHumanR />,
+            },
+            {
+                path: "brilianai-fmgc",
+                element: <BrilianFMGC />,
             },
             {
                 path: "*",

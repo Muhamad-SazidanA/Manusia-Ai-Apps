@@ -1,28 +1,25 @@
 import React from 'react';
 
-export default function BrilianBanking() {
+export default function BrilianHospital() {
   return (
     <div className="relative bg-gradient-to-b from-[#040011] to-[#06082B] text-white min-h-screen font-sans overflow-hidden">
       {/* Top-right decorative image */}
       <img
-        src="/images/ImageIndustriBanking1.svg"
+        src="/images/ImageRS1.svg"
         alt="Decor 1"
         className="absolute top-0 right-0 w-[300px] md:w-[400px] opacity-80 pointer-events-none z-0"
       />
 
-      {/* Pulsing star */}
-      <div className="absolute left-[60%] top-10 -translate-x-1/2 w-24 h-24 animate-pulse opacity-80 pointer-events-none flex items-center justify-center z-20">
-        <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
-      </div>
+
 
       {/* Header section */}
       <section className="relative z-10 px-6 py-20 text-left">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
-          Smarter Decision-Making <br /> Banking & Multifinance
+          Smarter Knowledge Access  <br /> for Smarter Healthcare
         </h1>
         <p className="text-base md:text-lg mb-6">
-          Ubah Data Tak Terstruktur Jadi <br className="md:hidden" />
-          Keputusan yang Cerdas
+          Satu Sumber Informasi untuk Tim <br />
+          Medis & Operasional
         </p>
         <button className="flex justify-center items-center h-10 px-10 text-white bg-blue-600/20 border border-blue-500/30 rounded-md mb-12 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light mt-12">
           Book a demo
@@ -39,13 +36,10 @@ export default function BrilianBanking() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-10">
             <div className="text-white max-w-xl text-center md:text-left">
               <p className="text-gray-300 leading-relaxed">
-                Brilian.AI adalah platform AI-powered knowledge management yang membantu tim perbankan & multifinance
-                menemukan informasi penting, merangkum dokumen, dan menjawab pertanyaan secara instan—layaknya
-                <span className="italic"> “ChatGPT internal”</span> yang aman dan terkendali.
-              </p>
+                Brilian.AI adalah platform AI-powered knowledge management yang membantu tim rumah sakit menemukan, memahami, dan memanfaatkan pengetahuan internal — cukup dengan bertanya layaknya ke ChatGPT internal, dari SOP IGD hingga pedoman BPJS.              </p>
             </div>
             <div className="flex-shrink-0">
-              <img src="/images/ImageIndustriBanking2.svg" alt="Solusi Brilian.AI" className="w-48 md:w-60" />
+              <img src="/images/ImageRS2.svg" alt="Solusi Brilian.AI" className="w-48 md:w-60" />
             </div>
           </div>
         </div>
@@ -57,17 +51,17 @@ export default function BrilianBanking() {
           <div className="flex-1 flex flex-col justify-center h-full">
             <div className="mb-10">
               <h3 className="text-2xl md:text-3xl font-semibold text-white text-center">
-                Benefits for Banks & Multifinance
+                Benefits for Hospitals
               </h3>
             </div>
 
             <ul className="space-y-6">
               {[
-                "Menghemat waktu pencarian informasi & riset internal hingga 80%",
-                "Mempercepat pengambilan keputusan kredit & operasional",
-                "Meningkatkan konsistensi informasi antar cabang",
-                "Mendukung efisiensi customer service dan complaint handling",
-                "Mempercepat onboarding karyawan baru",
+                "Percepat akses ke informasi klinis & operasional",
+                "Kurangi kesalahan akibat miskomunikasi prosedur",
+                "Dukung akurasi & efisiensi pelayanan pasien",
+                "Mempermudah pelatihan staf baru",
+                "Meningkatkan kepatuhan terhadap regulasi",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <span className="w-4 h-4 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
@@ -78,7 +72,7 @@ export default function BrilianBanking() {
           </div>
 
           <div className="flex-none w-[180px] md:w-[280px]">
-            <img src="/images/ImageIndustriBanking3.svg" alt="Banking Chart" className="w-full h-auto" />
+            <img src="/images/ImageRS3.svg" alt="Banking Chart" className="w-full h-auto" />
           </div>
         </div>
       </section>
@@ -87,15 +81,12 @@ export default function BrilianBanking() {
       <section className="px-6 py-16 text-center bg-black text-white relative">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl md:text-4xl font-semibold leading-snug mb-6">
-            Siap Transformasi Pengetahuan <br />
-            Menjadi Keunggulan Kompetitif?
+            Wujudkan Rumah Sakit yang <br />
+            Lebih Cerdas & Responsif
           </h3>
 
           <p className="text-lg text-gray-300 mb-12">
-            Brilian.AI bantu tim Anda mengambil keputusan
-            <span className="text-blue-400 font-medium"> lebih cepat, akurat</span>, dan
-            <span className="text-blue-400 font-medium"> berbasis data internal</span> yang selama ini belum tergali.
-          </p>
+            Dengan Brilian.AI, tim rumah sakit Anda bisa mengakses pengetahuan penting dalam hitungan detik.          </p>
 
           <div className="bg-[#0B122E] border border-blue-500/40 rounded-2xl px-6 py-8 shadow-xl max-w-2xl mx-auto">
             <div className="flex justify-center mb-3">

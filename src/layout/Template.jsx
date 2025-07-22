@@ -129,24 +129,24 @@ export default function Template() {
                                                             BANK dan<br />Multifinance
                                                         </span>
                                                     </Link>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    <Link to="/brilianai-hospital" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-hospital text-xl"></i>
                                                         <span>Rumah Sakit</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    </Link>
+                                                    <Link to="/brilianai-insurance" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-hand-holding-medical text-xl"></i>
                                                         <span>Insurance</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    </Link>
+                                                    <Link to="/brilianai-humanr" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-users text-xl"></i>
                                                         <span>
                                                             Human<br />Resource
                                                         </span>
-                                                    </div>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    </Link>
+                                                    <Link to="/brilianai-fmgc" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-basket-shopping text-xl"></i>
                                                         <span>FMGC</span>
-                                                    </div>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         )}
