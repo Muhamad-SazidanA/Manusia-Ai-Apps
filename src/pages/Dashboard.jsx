@@ -37,7 +37,7 @@ export default function Dashboard() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl font-inter font-normal text-white/90 mb-4 max-w-[520px] mx-auto leading-[1.6]">
+          <p className="text-1xl md:text-2xl font-inter font-normal text-white/90 mb-4 max-w-[520px] mx-auto leading-[1.6]">
             From Data to Insights: Tailored AI Solutions for <br />Enterprise Growth
           </p>
 
@@ -129,7 +129,7 @@ export default function Dashboard() {
           <img
             src="/images/Image-BintangBG.png"
             alt="Star"
-            className="absolute top-36 right-80 w-auto h-20 animate-pulse delay-500 opacity-60"
+            className="absolute z-10 top-36 right-80 w-auto h-20 animate-pulse delay-500 opacity-60 translate-x-[50px]"
           />
         </div>
 
@@ -149,15 +149,15 @@ export default function Dashboard() {
                   <img
                     src="/images/hexsagon-ai.svg"
                     alt="hexagon product network"
-                    className="w-full max-w-8xl h-auto object-contain scale-[2]"
+                    className="w-full max-w-8xl h-auto object-contain scale-[2] z-1"
                   />
                 </div>
               </div>
             </div>
 
             {/* Left Content */}
-            <div className="space-y-6 lg:order-1">
-              <p className="text-lg md:text-xl font-inter font-normal text-white/90 leading-relaxed">
+            <div>
+              <p className="absolute z-20 text-1xl md:text-2xl font-inter font-hint text-white/90 leading-relaxed -translate-x-[50px] -translate-y-[150px]">
                 Manusia.AI adalah perusahaan konsultan dan custom AI<br />
                 yang berbasis di Jakarta, yang berfokus pada<br />
                 penyediaan layanan konsultasi strategi AI dan<br />
@@ -176,7 +176,7 @@ export default function Dashboard() {
       {/* Brilian.AI Section - Content 3 */}
       <section className="py-20 bg-gradient-to-b from-black via-blue-900 to-slate-800 relative">
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative mb-20">
           {/* Title & Subtitle */}
           <div className="text-center mb-4">
             <div className="flex justify-center items-center gap-4 mb-2">
@@ -184,7 +184,7 @@ export default function Dashboard() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white">Brilian.AI</h2>
               <img src="/images/Image-BintangBG.png" alt="" className="w-24 h-24 animate-pulse opacity-80" />
             </div>
-            <div className="text-lg md:text-xl font-inter font-normal text-white/80 mb-2">
+            <div className="absolute z-20 text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed">
               AI-powered knowledge management platform<br />
               yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
             </div>
@@ -196,13 +196,13 @@ export default function Dashboard() {
               <img
                 src="/images/BrilianContentDS.svg"
                 alt="Brilian.AI"
-                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
+                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain transform lg:scale-[1.8] -translate-x-[50px] translate-y-[100px] drop-shadow-2xl"
                 style={{ maxHeight: 400 }}
               />
             </div>
             {/* Kanan: Deskripsi */}
-            <div className="text-left">
-              <div className="text-lg md:text-xl font-inter font-normal text-white/90 leading-relaxed ">
+            <div>
+              <div className="absolute z-20 text-1xl md:text-2xl w-full h-full font-inter font-hint text-white/90 leading-relaxed -translate-x-[50px]">
                 Brilian.Ai merupakan AI-powered knowledge<br />
                 management platformyang membantu organisasi<br />
                 mengakses informasi internal secara cepat,cerdas,<br />
@@ -314,9 +314,9 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-4">
-            <button className="flex justify-center items-center h-10 px-10 text-white bg-blue-600/20 border border-blue-500/30 rounded-md mb-12 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light mt-12">
-              Book a demo
+          <div className="flex justify-center mt-10">
+            <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
+                Demo a Book
             </button>
           </div>
         </div>
@@ -355,7 +355,7 @@ export default function Dashboard() {
             />
           </div>
 
-          <p className="text-lg text-white/80 max-w-3xl mx-auto font-inter font-normal">
+          <p className="absolute z-20 text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed">
             Intelligent Document Processing (IDP) <br />yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
           </p>
 
@@ -363,9 +363,9 @@ export default function Dashboard() {
           <div className="grid md:grid-cols-2 gap-0 items-center mb-2 relative">
             {/* Kanan: Deskripsi */}
             <div className="text-left relative z-10">
-              <p className="text-lg md:text-xl font-inter font-normal text-white/90 leading-relaxed">
+              <p className="absolute z-20 text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed  -translate-y-[150px]">
                 Rangkum.ai adalah platform Intelligent <br />
-                Document Processing (IDP) berbasis AI yang <br />
+                Document Processing (IDP) berbasis AI yang <br /> 
                 membantu organisasi mengotomatisasi <br />
                 ekstraksi, pemrosesan, dan peringkasan<br />
                 dokumen, dari PDF, formulir, hingga laporan <br />
@@ -378,19 +378,18 @@ export default function Dashboard() {
               <img
                 src="/images/RangkumContentDS.svg"
                 alt="Rangkum.AI"
-                className="w-full max-w-2xl h-auto object-contain opacity-60"
+                className="w-full max-w-2xl h-auto object-contain opacity-60 translate-y-[50px] drop-shadow-2xl"
                 style={{ 
-                  maxHeight: 600,
-                  transform: 'translateY(100px)' // Move image down to overlap with cards
+                  maxHeight: 600, // Move image down to overlap with cards
                 }}
               />
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12 mb-12 mt-2 relative z-30">
+          <div className="grid md:grid-cols-3 gap-12 mt-2 relative z-30 -translate-y-[100px]">
             {/* Card tetap seperti semula dengan z-index lebih tinggi */}
             {/* Intelligent Document Processing - Purple Color */}
-            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/60 hover:bg-purple-900/20 transition-all duration-300 relative z-30"
+            <div className="flex flex-col  justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/60 hover:bg-purple-900/20 transition-all duration-300 relative z-30 "
               style={{ boxShadow: '0 0 20px 4px rgba(139,92,246,0.3)' }}>
               <h3
                 className="text-l font-inter font-normal text-purple-300 text-left leading-snug drop-shadow-sm mb-4"
@@ -433,9 +432,9 @@ export default function Dashboard() {
           </div>
 
           {/* CTA Button */}
-          <div className="flex justify-center mt-4">
-            <button className="flex justify-center items-center h-10 px-10 text-white bg-blue-600/20 border border-blue-500/30 rounded-md mb-12 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light mt-12">
-              Book a demo
+          <div className="flex justify-center -translate-y-[50px]">
+            <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
+                Demo a Book
             </button>
           </div>
         </div>

@@ -9,14 +9,14 @@ export default function BrilianAI() {
                 <div className="absolute top-20 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center">
                     <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
                 </div>
-                
+
                 <div className="relative max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between px-10">
                     <div className="flex-1 min-w-[300px]">
                         <h1 className="text-4xl md:text-7xl lg:text-7xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
                             Brilian.AI
                         </h1>
                         <p className="w-full overflow-x-auto text-2xl md:text-3xl text-white/90 mb-10 font-medium max-w-lg text-left">
-                            Accelerate Decisions with AI-Powered 
+                            Accelerate Decisions with AI-Powered
                             <br />Knowledge Management
                         </p>
                         <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg text-lg">
@@ -27,7 +27,7 @@ export default function BrilianAI() {
                         <img src="/images/BrilianContentDS.svg" alt="brilian.ai" className="w-full max-w-lg md:max-w-xl h-auto object-contain drop-shadow-2xl" />
                     </div>
                 </div>
-                
+
             </section>
 
             {/* What is Brilian.AI Section */}
@@ -75,8 +75,8 @@ export default function BrilianAI() {
                                     Every meeting becomes notes, tasks,<br />
                                     agendas, and follow-ups, automatically.
                                 </p>
-                                    <img src="/images/Image-Tanyaapasaja.png" alt="Chat Interface" className="w-full h-24" />
-                                </div>
+                                <img src="/images/Image-Tanyaapasaja.png" alt="Chat Interface" className="w-full h-24" />
+                            </div>
                             <div className="md:w-3/5 w-full">
                                 <h3 className="text-4xl md:text-5xl font-bold text-white mb-10">Tanya apa aja</h3>
                                 <p className="w-full overflow-x-auto text-2xl md:text-2xl text-white/90 mb-30 font-normal">
@@ -94,12 +94,12 @@ export default function BrilianAI() {
                                 style={{ boxShadow: '0 0 20px 4px rgba(252, 109, 45, 0.3)' }}>
                                 <h3 className="text-xl font-inter font-medium text-[#FC6D2D] mb-4">Buat Laporan</h3>
                                 <p className="text-white/70 mb-4 text-sm font-inter font-normal">
-                                Get trusted answers from every corner of <br />
-                                your Workspace, instantly and in full <br />
-                                context.
+                                    Get trusted answers from every corner of <br />
+                                    your Workspace, instantly and in full <br />
+                                    context.
                                 </p>
                                 <div className="bg-slate-800/50 rounded-lg p-4">
-                                <img src="/images/Image-Buatlaporan.png" alt="Report Generation" className="w-full h-24 object-cover rounded" />
+                                    <img src="/images/Image-Buatlaporan.png" alt="Report Generation" className="w-full h-24 object-cover rounded" />
                                 </div>
                             </div>
                             <div className="md:w-3/5 w-full">
@@ -118,12 +118,12 @@ export default function BrilianAI() {
                                 style={{ boxShadow: '0 0 20px 4px rgba(16, 224, 193, 0.3)' }}>
                                 <h3 className="text-xl font-inter font-medium text-[#10E0C1] mb-4">Analisis Laporan</h3>
                                 <p className="text-white/70 mb-4 text-sm font-inter font-normal">
-                                Turn ideas into visuals, writing, and tasks <br />
-                                with zero prompt engineering or manual <br />
-                                work.
+                                    Turn ideas into visuals, writing, and tasks <br />
+                                    with zero prompt engineering or manual <br />
+                                    work.
                                 </p>
                                 <div className="bg-slate-800/50 rounded-lg p-4">
-                                <img src="/images/Image-Analisislaporan.png" alt="Report Analysis" className="w-full h-24 object-cover rounded" />
+                                    <img src="/images/Image-Analisislaporan.png" alt="Report Analysis" className="w-full h-24 object-cover rounded" />
                                 </div>
                             </div>
                             <div className="md:w-3/5 w-full">
@@ -143,11 +143,11 @@ export default function BrilianAI() {
                                 style={{ boxShadow: '0 0 20px 4px rgba(72,156,255,0.3)' }}>
                                 <h3 className="text-xl font-inter font-medium text-[#489CFF] mb-4">Riset Market</h3>
                                 <p className="text-white/70 mb-4 text-sm font-inter font-normal">
-                                Every meeting becomes notes, tasks,<br />
-                                agendas, and follow-ups, automatically.
+                                    Every meeting becomes notes, tasks,<br />
+                                    agendas, and follow-ups, automatically.
                                 </p>
                                 <div className="bg-slate-800/50 rounded-lg p-4">
-                                <img src="/images/Image-Risetmarket.png" alt="Market Research" className="w-full h-24 object-cover rounded" />
+                                    <img src="/images/Image-Risetmarket.png" alt="Market Research" className="w-full h-24 object-cover rounded" />
                                 </div>
                             </div>
                             <div className="md:w-3/5 w-full">
@@ -193,11 +193,11 @@ export default function BrilianAI() {
                                 style={{ boxShadow: '0 0 20px 4px rgba(16, 224, 193, 0.3)' }}>
                                 <h3 className="text-xl font-inter font-medium text-[#10E0C1] mb-4">Rangkumin Meeting</h3>
                                 <p className="text-white/70 mb-4 text-sm font-inter font-normal">
-                                Turn ideas into visuals, writing, and tasks <br />
-                                with zero prompt engineering or manual <br />
-                                work.
+                                    Turn ideas into visuals, writing, and tasks <br />
+                                    with zero prompt engineering or manual <br />
+                                    work.
                                 </p>
-                                
+
                                 <img src="/images/Image-Rangkuminmeet.png" alt="Meeting Summary" className="w-full h-24 object-cover rounded" />
                             </div>
                             <div className="md:w-3/5 w-full">
@@ -222,7 +222,7 @@ export default function BrilianAI() {
                 }}
             >
                 {/* Bintang di atas card, absolute dan z-30 */}
-                <div className="absolute left-1/2 top-36 -translate-x-20 w-auto h-16 animate-pulse delay-500 opacity-30 z-30 pointer-events-none">
+                <div className="absolute left-1/2 top-36 -translate-x-20 w-auto h-20 animate-pulse delay-500 opacity-30 z-30 pointer-events-none">
                     <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
                 </div>
                 {/* Card content */}
@@ -235,34 +235,34 @@ export default function BrilianAI() {
                             boxShadow: "0 0 32px 8px #2196F3, 0 0 0 2px #2196F3",
                         }}
                     >
-                        
+
                         {/* Left Side: Text */}
                         <div className="flex-1 text-left pr-0 md:pr-10">
                             <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3">Get started today!</h2>
-                            <p className="text-3xl md:text-4xl  text-white ">
+                            <p className="text-3xl md:text-4xl font-extralight text-white w-full">
                                 Siap Mempercepat Akses <br /> Pengetahuan Anda?
                             </p>
                         </div>
                         {/* Right Side: Badge + Buttons */}
                         <div className="flex-1 flex flex-col items-center md:items-end gap-6 w-full md:w-auto mt-8 md:mt-0">
                             {/* Badge */}
-                            <div className="w-full md:w-auto flex justify-center md:justify-end">
-                                <div className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400 shadow-lg border border-blue-400 text-white font-medium text-base"
-                                    style={{
-                                        boxShadow: "0 0 16px 2px #2196F3"
-                                    }}
-                                >
-                                    <span className="text-blue-200 text-xl">🆕</span>
-                                    <span>New: Our AI integration just landed</span>
+                            <div className="w-full md:w-auto flex justify-center md:justify-center">
+                                <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 rounded-full px-8 py-4 mb-4 min-w-[300px] justify-center">
+                                    <img
+                                        src="/images/Image-BintangBG.png"
+                                        alt="Star"
+                                        className="w-5 h-5 animate-pulse opacity-60"
+                                    />
+                                    <span className="text-blue-300 text-sm font-inter font-normal">New: Our AI integration just landed</span>
                                 </div>
                             </div>
                             {/* Buttons */}
-                            <div className="flex gap-4 w-full md:w-auto justify-center md:justify-end">
-                                <button className="px-8 py-4 rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
+                            <div className="flex gap-5 w-full md:w-auto justify-center md:justify-end">
+                                <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
                                     Get Started
                                 </button>
-                                <button className="px-8 py-4 rounded-xl font-semibold text-lg bg-black/80 text-white border border-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-200 shadow-lg">
-                                    Book a demo
+                                <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg text-white bg-blue-600/20 border border-blue-500/30 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light">
+                                    Start for free
                                 </button>
                             </div>
                         </div>
