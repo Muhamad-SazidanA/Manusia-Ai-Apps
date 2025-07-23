@@ -4,7 +4,7 @@ export default function Dashboard() {
   return (
     <div className="w-full overflow-x-hidden">
       {/* Hero Section - Content 1 */}
-      <section className="relative py-20 text-center bg-gradient-to-b from-black via-slate-900 to-blue-900">
+      <section className="min-h-screen py-20 px-6 md:px-16 flex justify-center items-center bg-gradient-to-b from-black via-slate-900 to-blue-900">
         {/* Decorative Stars */}
         <div className="absolute inset-0">
           <img
@@ -19,7 +19,7 @@ export default function Dashboard() {
           />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 rounded-full px-4 py-2 mb-4">
             <img
@@ -31,13 +31,12 @@ export default function Dashboard() {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-bold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-inter mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
             Custom AI for Your<br />
             Real Business Challenges
           </h1>
-
           {/* Subtitle */}
-          <p className="text-1xl md:text-2xl font-inter font-normal text-white/90 mb-4 max-w-[520px] mx-auto leading-[1.6]">
+          <p className="text-base md:text-2xl font-normal font-inter text-white/90 mb-4 max-w-[520px] mx-auto leading-[1.6]">
             From Data to Insights: Tailored AI Solutions for <br />Enterprise Growth
           </p>
 
@@ -135,7 +134,7 @@ export default function Dashboard() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold text-white mb-8">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-inter text-white mb-8">
               What is Manusia.AI
             </h2>
           </div>
@@ -157,7 +156,7 @@ export default function Dashboard() {
 
             {/* Left Content */}
             <div>
-              <p className="absolute z-20 text-1xl md:text-2xl font-inter font-hint text-white/90 leading-relaxed -translate-x-[50px] -translate-y-[150px]">
+              <p className="absolute z-20 text-base md:text-2xl font-normal font-inter text-white/90 leading-relaxed -translate-x-[50px] -translate-y-[150px]">
                 Manusia.AI adalah perusahaan konsultan dan custom AI<br />
                 yang berbasis di Jakarta, yang berfokus pada<br />
                 penyediaan layanan konsultasi strategi AI dan<br />
@@ -181,10 +180,12 @@ export default function Dashboard() {
           <div className="text-center mb-4">
             <div className="flex justify-center items-center gap-4 mb-2">
               <img src="/images/Image-BintangBG.png" alt="" className="w-24 h-24 animate-pulse opacity-80" />
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold text-white">Brilian.AI</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-inter text-white">
+                Brilian.AI
+              </h2>
               <img src="/images/Image-BintangBG.png" alt="" className="w-24 h-24 animate-pulse opacity-80" />
             </div>
-            <div className="absolute z-20 text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed">
+            <div className="absolute z-20 text-base md:text-2xl font-normal font-inter text-white/90 leading-relaxed">
               AI-powered knowledge management platform<br />
               yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
             </div>
@@ -202,7 +203,7 @@ export default function Dashboard() {
             </div>
             {/* Kanan: Deskripsi */}
             <div>
-              <div className="absolute z-20 text-1xl md:text-2xl w-full h-full font-inter font-hint text-white/90 leading-relaxed -translate-x-[50px]">
+              <div className="absolute z-20 text-base md:text-2xl w-full h-full font-normal font-inter text-white/90 leading-relaxed -translate-x-[50px]">
                 Brilian.Ai merupakan AI-powered knowledge<br />
                 management platformyang membantu organisasi<br />
                 mengakses informasi internal secara cepat,cerdas,<br />
@@ -234,7 +235,7 @@ export default function Dashboard() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold font-inter text-white mb-4">
               AI-powered knowledge<br /> management platform
             </h2>
           </div>
@@ -243,8 +244,8 @@ export default function Dashboard() {
             {/* Tanya Apa Aja - Blue Color (#489CFF) */}
             <div className="bg-slate-900/80 rounded-xl p-6 border border-[#489CFF]/30 hover:border-[#489CFF]/60 hover:bg-[#489CFF]/10 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(72,156,255,0.3)' }}>
-              <h3 className="text-xl font-inter font-medium text-[#489CFF] mb-4">Tanya Apa Aja</h3>
-              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+              <h3 className="text-xl font-medium font-inter text-[#489CFF] mb-4">Tanya Apa Aja</h3>
+              <p className="text-sm font-normal text-white/70 mb-4 font-inter">
                 Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
               </p>
               <div className="bg-slate-800/50 rounded-lg p-4">
@@ -255,8 +256,8 @@ export default function Dashboard() {
             {/* Buat Laporan - Orange Color (#FC6D2D) */}
             <div className="bg-slate-900/80 rounded-xl p-6 border border-[#FC6D2D]/30 hover:border-[#FC6D2D]/60 hover:bg-[#FC6D2D]/10 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(252, 109, 45, 0.3)' }}>
-              <h3 className="text-xl font-inter font-medium text-[#FC6D2D] mb-4">Buat Laporan</h3>
-              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+              <h3 className="text-xl font-medium font-inter text-[#FC6D2D] mb-4">Buat Laporan</h3>
+              <p className="text-sm font-normal text-white/70 mb-4 font-inter">
                 Get trusted answers from every corner of your Workspace, instantly and in full context.
               </p>
               <div className="bg-slate-800/50 rounded-lg p-4">
@@ -267,8 +268,8 @@ export default function Dashboard() {
             {/* Analisis Laporan - Teal Color (#10E0C1) */}
             <div className="bg-slate-900/80 rounded-xl p-6 border border-[#10E0C1]/30 hover:border-[#10E0C1]/60 hover:bg-[#10E0C1]/10 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(16, 224, 193, 0.3)' }}>
-              <h3 className="text-xl font-inter font-medium text-[#10E0C1] mb-4">Analisis Laporan</h3>
-              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+              <h3 className="text-xl font-medium font-inter text-[#10E0C1] mb-4">Analisis Laporan</h3>
+              <p className="text-sm font-normal text-white/70 mb-4 font-inter">
                 Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
               </p>
               <div className="bg-slate-800/50 rounded-lg p-4">
@@ -281,8 +282,8 @@ export default function Dashboard() {
             {/* Riset Market - Blue Color (#489CFF) */}
             <div className="bg-slate-900/80 rounded-xl p-6 border border-[#489CFF]/30 hover:border-[#489CFF]/60 hover:bg-[#489CFF]/10 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(72,156,255,0.3)' }}>
-              <h3 className="text-xl font-inter font-medium text-[#489CFF] mb-4">Riset Market</h3>
-              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+              <h3 className="text-xl font-medium font-inter text-[#489CFF] mb-4">Riset Market</h3>
+              <p className="text-sm font-normal text-white/70 mb-4 font-inter">
                 Every meeting becomes notes, tasks, agendas, and follow-ups, automatically.
               </p>
               <div className="bg-slate-800/50 rounded-lg p-4">
@@ -293,8 +294,8 @@ export default function Dashboard() {
             {/* Pikirin Ide - Orange Color (#FC6D2D) */}
             <div className="bg-slate-900/80 rounded-xl p-6 border border-[#FC6D2D]/30 hover:border-[#FC6D2D]/60 hover:bg-[#FC6D2D]/10 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(252, 109, 45, 0.3)' }}>
-              <h3 className="text-xl font-inter font-medium text-[#FC6D2D] mb-4">Pikirin Ide</h3>
-              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+              <h3 className="text-xl font-medium font-inter text-[#FC6D2D] mb-4">Pikirin Ide</h3>
+              <p className="text-sm font-normal text-white/70 mb-4 font-inter">
                 Get trusted answers from every corner of your Workspace, instantly and in full context.
               </p>
               <div className="bg-slate-800/50 rounded-lg p-4">
@@ -305,8 +306,8 @@ export default function Dashboard() {
             {/* Rangkumin Meeting - Teal Color (#10E0C1) */}
             <div className="bg-slate-900/80 rounded-xl p-6 border border-[#10E0C1]/30 hover:border-[#10E0C1]/60 hover:bg-[#10E0C1]/10 transition-all duration-300"
               style={{ boxShadow: '0 0 20px 4px rgba(16, 224, 193, 0.3)' }}>
-              <h3 className="text-xl font-inter font-medium text-[#10E0C1] mb-4">Rangkumin Meeting</h3>
-              <p className="text-white/70 mb-4 text-sm font-inter font-normal">
+              <h3 className="text-xl font-medium font-inter text-[#10E0C1] mb-4">Rangkumin Meeting</h3>
+              <p className="text-sm font-normal text-white/70 mb-4 font-inter">
                 Turn ideas into visuals, writing, and tasks with zero prompt engineering or manual work.
               </p>
               <div className="bg-slate-800/50 rounded-lg p-4">
@@ -316,7 +317,7 @@ export default function Dashboard() {
           </div>
           <div className="flex justify-center mt-10">
             <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
-                Demo a Book
+              Demo a Book
             </button>
           </div>
         </div>
@@ -355,7 +356,7 @@ export default function Dashboard() {
             />
           </div>
 
-          <p className="absolute z-20 text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed">
+          <p className="absolute z-20 text-base md:text-2xl font-normal font-inter text-white/90 leading-relaxed">
             Intelligent Document Processing (IDP) <br />yang membantu organisasi mengakses informasi internal secara cepat, cerdas, dan aman
           </p>
 
@@ -363,23 +364,23 @@ export default function Dashboard() {
           <div className="grid md:grid-cols-2 gap-0 items-center mb-2 relative">
             {/* Kanan: Deskripsi */}
             <div className="text-left relative z-10">
-              <p className="absolute z-20 text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed  -translate-y-[150px]">
+              <p className="absolute z-20 text-base md:text-2xl font-normal font-inter text-white/90 leading-relaxed  -translate-y-[150px]">
                 Rangkum.ai adalah platform Intelligent <br />
-                Document Processing (IDP) berbasis AI yang <br /> 
+                Document Processing (IDP) berbasis AI yang <br />
                 membantu organisasi mengotomatisasi <br />
                 ekstraksi, pemrosesan, dan peringkasan<br />
                 dokumen, dari PDF, formulir, hingga laporan <br />
                 kompleks
               </p>
             </div>
-            
+
             {/* SVG Gambar - Positioned to overlap with cards below */}
             <div className="relative z-0">
               <img
                 src="/images/RangkumContentDS.svg"
                 alt="Rangkum.AI"
                 className="w-full max-w-2xl h-auto object-contain opacity-60 translate-y-[50px] drop-shadow-2xl"
-                style={{ 
+                style={{
                   maxHeight: 600, // Move image down to overlap with cards
                 }}
               />
@@ -434,7 +435,7 @@ export default function Dashboard() {
           {/* CTA Button */}
           <div className="flex justify-center -translate-y-[50px]">
             <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
-                Demo a Book
+              Demo a Book
             </button>
           </div>
         </div>
@@ -444,10 +445,10 @@ export default function Dashboard() {
       <section className="py-20 bg-gradient-to-b from-slate-900 via-blue-900 to-black relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-inter font-semibold text-white mb-2">
+            <h2 className="text-4xl md:text-5xl font-semibold font-inter text-white mb-2">
               Industries We Serve
             </h2>
-            <h3 className="text-2xl md:text-3xl font-inter font-normal text-gray-200">
+            <h3 className="text-2xl md:text-3xl font-normal font-inter text-gray-200">
               Use Cases Rangkum.AI
             </h3>
           </div>

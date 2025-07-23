@@ -33,16 +33,18 @@ export default function Template() {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
+                                        className="block px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
                                     >
                                         About
                                     </Link>
                                 </li>
                                 {/* PRODUCTS DROPDOWN */}
                                 <li className="relative group">
-                                    <div className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
-                                        <span>Products</span>
-                                        <i className="fas fa-chevron-down text-xs"></i>
+                                    <div className="block px-4 py-2 font-medium text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
+                                        <div className="flex items-center gap-2">
+                                            <span>Products</span>
+                                            <i className="fas fa-chevron-down text-xs"></i>
+                                        </div>
                                     </div>
                                     <div
                                         className="absolute top-full left-0 mt-2 rounded-2xl z-50 shadow-lg overflow-hidden min-w-[180px] p-1 transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
@@ -57,22 +59,25 @@ export default function Template() {
                                     >
                                         <Link
                                             to="/brilian-ai"
-                                            className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
+                                            className="block px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
                                         >
                                             <i className="fa-solid fa-brain text-lg"></i> Brilian.AI
                                         </Link>
                                         <Link
                                             to="/rangkum-ai"
-                                            className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
+                                            className="block px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
                                         >
                                             <i className="fa-solid fa-file-lines text-lg"></i> Rangkum.AI
                                         </Link>
                                     </div>
                                 </li>
                                 <li className="relative group">
-                                    <div className="block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
-                                        <span>Industries</span>
-                                        <i className="fas fa-chevron-down text-xs"></i>
+
+                                    <div className="block px-4 py-2 font-medium text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
+                                        <div className="flex items-center gap-2">
+                                            <span>Industries</span>
+                                            <i className="fas fa-chevron-down text-xs"></i>
+                                        </div>
                                     </div>
                                     <div
                                         className={`
@@ -123,27 +128,27 @@ export default function Template() {
                                         {activeTab === 'brilian' && (
                                             <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 340, minHeight: 180 }}>
                                                 <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full">
-                                                    <Link to="/brilianai-banking" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
+                                                    <Link to="/brilianai-banking" className="flex items-center gap-2 text-white text-sm font-bold block px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-landmark text-xl"></i>
                                                         <span>
                                                             BANK dan<br />Multifinance
                                                         </span>
                                                     </Link>
-                                                    <Link to="/brilianai-hospital" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
+                                                    <Link to="/brilianai-hospital" className="flex items-center gap-2 text-white text-sm font-bold block px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-hospital text-xl"></i>
                                                         <span>Rumah Sakit</span>
                                                     </Link>
-                                                    <Link to="/brilianai-insurance" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
+                                                    <Link to="/brilianai-insurance" className="flex items-center gap-2 text-white text-sm font-bold block px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-hand-holding-medical text-xl"></i>
                                                         <span>Insurance</span>
                                                     </Link>
-                                                    <Link to="/brilianai-humanr" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
+                                                    <Link to="/brilianai-humanr" className="flex items-center gap-2 text-white text-sm font-bold block px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-users text-xl"></i>
                                                         <span>
                                                             Human<br />Resource
                                                         </span>
                                                     </Link>
-                                                    <Link to="/brilianai-fmgc" className="flex items-center gap-2 text-white text-sm font-semibold block px-4 py-2 text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
+                                                    <Link to="/brilianai-fmgc" className="flex items-center gap-2 text-white text-sm font-bold block px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                                         <i className="fa-solid fa-basket-shopping text-xl"></i>
                                                         <span>FMGC</span>
                                                     </Link>
@@ -153,29 +158,29 @@ export default function Template() {
                                         {activeTab === 'rangkum' && (
                                             <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 340, minHeight: 180 }}>
                                                 <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full">
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    <div className="flex items-center gap-2 text-white text-sm font-bold">
                                                         <i className="fa-solid fa-industry text-xl"></i>
                                                         <span>Manufacturing</span>
                                                     </div>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    <div className="flex items-center gap-2 text-white text-sm font-bold">
                                                         <i className="fa-solid fa-store text-xl"></i>
                                                         <span>Retail</span>
                                                     </div>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    <div className="flex items-center gap-2 text-white text-sm font-bold">
                                                         <i className="fa-solid fa-basket-shopping text-xl"></i>
                                                         <span>FMCG</span>
                                                     </div>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    <div className="flex items-center gap-2 text-white text-sm font-bold">
                                                         <i className="fa-solid fa-car text-xl"></i>
                                                         <span>Asuransi</span>
                                                     </div>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    <div className="flex items-center gap-2 text-white text-sm font-bold">
                                                         <i className="fa-solid fa-users text-xl"></i>
                                                         <span>
                                                             Human<br />Resource
                                                         </span>
                                                     </div>
-                                                    <div className="flex items-center gap-2 text-white text-sm font-semibold">
+                                                    <div className="flex items-center gap-2 text-white text-sm font-bold">
                                                         <i className="fa-solid fa-heart-pulse text-xl"></i>
                                                         <span>Healthcare</span>
                                                     </div>
@@ -187,7 +192,7 @@ export default function Template() {
                                 <li>
                                     <Link
                                         to="/blog"
-                                        className="rounded-xl px-4 py-2 transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
+                                        className="lock px-4 py-2 font-semibold text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white"
                                     >
                                         Blog
                                     </Link>
@@ -233,12 +238,12 @@ export default function Template() {
                         {/* Right Section */}
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-10">
                             <div className="min-w-[120px]">
-                                <h4 className="text-lg font-semibold text-white mb-4">
+                                <h4 className="text-lg font-bold text-white mb-4">
                                     About
                                 </h4>
                             </div>
                             <div className="min-w-[120px]">
-                                <h4 className="text-lg font-semibold text-white mb-4">
+                                <h4 className="text-lg font-bold text-white mb-4">
                                     Products
                                 </h4>
                                 <ul className="space-y-2">
@@ -255,7 +260,7 @@ export default function Template() {
                                 </ul>
                             </div>
                             <div className="min-w-[120px]">
-                                <h4 className="text-lg font-semibold text-white mb-4">
+                                <h4 className="text-lg font-bold text-white mb-4">
                                     Industries
                                 </h4>
                                 <ul className="space-y-2">
@@ -267,7 +272,7 @@ export default function Template() {
                                 </ul>
                             </div>
                             <div className="min-w-[120px]">
-                                <h4 className="text-lg font-semibold text-white mb-4">
+                                <h4 className="text-lg font-bold text-white mb-4">
                                     Blog
                                 </h4>
                             </div>
@@ -275,6 +280,6 @@ export default function Template() {
                     </div>
                 </div>
             </footer>
-        </div>
+        </div >
     );
 }
