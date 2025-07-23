@@ -25,7 +25,7 @@ export default function BrilianInsurance() {
               </button>
             </div>
           </div>
-          <div className="absolute z-1 flex-1 flex justify-end items-end translate-x-[750px] translate-y-[50px]">
+          <div className="absolute z-1 flex-1 flex justify-end items-end translate-x-[750px] translate-y-[20px]">
             <img src="/images/ImageInsurance1.svg" alt="Banking Chart" className="w-full max-w-lg md:max-w-xl h-auto object-contain" />
           </div>
         </div>
@@ -47,8 +47,8 @@ export default function BrilianInsurance() {
                 selalu siaga.
               </p>
             </div>
-            <div className="flex justify-center relative z-10">
-              <img src="/images/ImageInsurance2.svg" alt="Solusi Brilian.AI" className="w-full max-w-md h-auto object-contain scale-[2] translate-x-[200px] translate-y-[-50px]" />
+            <div className="flex justify-center ">
+              <img src="/images/ImageInsurance2.svg" alt="Solusi Brilian.AI" className="w-full max-w-md h-auto object-contain scale-[2] translate-x-[200px] translate-y-[-70px]" />
             </div>
           </div>
         </div>

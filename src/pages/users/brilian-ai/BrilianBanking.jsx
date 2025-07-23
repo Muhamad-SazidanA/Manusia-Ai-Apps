@@ -22,8 +22,8 @@ export default function BrilianBanking() {
             </button>
           </div>
           </div>
-          <div className="absolute z-1 flex-1 flex justify-end items-end translate-x-[750px] translate-y-[50px]">
-            <img src="/images/ImageIndustriBanking1.svg" alt="Banking Chart" className="w-full max-w-lg md:max-w-xl h-auto object-contain" />
+          <div className="absolute relative z-1 flex-1 flex justify-end items-end translate-y-[50px]">
+            <img src="/images/ImageIndustriBanking.svg" alt="Banking Chart" className="w-full max-w-lg md:max-w-xl h-auto object-contain" />
           </div>
         </div>
       </section>

@@ -45,7 +45,7 @@ export default function BrilianHumanR() {
               </p>
             </div>
             <div className="flex justify-center relative z-10">
-              <img src="/images/IImageHR2.svg" alt="Solusi Brilian.AI" className="w-full max-w-md h-auto object-contain scale-[2] translate-x-[100px] translate-y-[-50px]" />
+              <img src="/images/ImageHR2.svg" alt="Solusi Brilian.AI" className="w-full max-w-md h-auto object-contain scale-[2] translate-x-[100px] translate-y-[-50px]" />
             </div>
           </div>
         </div>

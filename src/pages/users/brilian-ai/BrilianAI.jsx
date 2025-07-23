@@ -25,11 +25,11 @@ export default function BrilianAI() {
                             </button>
                         </div>
                     </div>
-                    <div className="flex-1 flex justify-end items-end translate-x-10 ml-30">
+                    <div className="flex-1 flex justify-end items-end translate-x-10 ml-30 ">
                         <img
                             src="/images/BrilianContentDS.svg"
                             alt="brilian.ai"
-                            className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover drop-shadow-2xl"
+                            className="w-full max-w-sm md:max-w-md 3xl:max-w-6xl h-auto object-cover drop-shadow-2xl"
                             style={{ maxHeight: '100%' }}
                         />
                     </div>

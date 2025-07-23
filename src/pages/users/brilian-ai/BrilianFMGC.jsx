@@ -11,7 +11,7 @@ export default function BrilianFMCG() {
         <div className="relative max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between px-10">
           <div className="flex-1 -translate-x-[100px]">
             <h1 className="text-4xl md:text-7xl lg:text-7xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
-              SStreamline Knowledge &<br />
+              Streamline Knowledge &<br />
               Operations in the <br />
               FMCG Industry
             </h1>
