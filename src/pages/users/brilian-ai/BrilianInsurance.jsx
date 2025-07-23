@@ -2,128 +2,158 @@ import React from 'react';
 
 export default function BrilianInsurance() {
   return (
-    <div className="relative bg-gradient-to-b from-[#040011] to-[#06082B] text-white min-h-screen font-sans overflow-hidden">
-      {/* Top-right decorative image */}
-      <img
-        src="/images/ImageInsurance1.svg"
-        alt="Decor 1"
-        className="absolute top-0 right-0 w-[300px] md:w-[400px] opacity-80 pointer-events-none z-0"
-      />
-
-      {/* Header section */}
-      <section className="relative z-10 px-6 py-20 text-left">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
-          Empower Your Insurance  <br /> Operations with Smart <br /> Knowledge Access
-        </h1>
-        <p className="text-base md:text-lg mb-6">
-          Tingkatkan Kecepatan dan Ketepatan  <br />
-          Layanan Asuransi
-        </p>
-        <button className="flex justify-center items-center h-10 px-10 text-white bg-blue-600/20 border border-blue-500/30 rounded-md mb-12 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light mt-12">
-          Book a demo
-        </button>
+    <div className="w-full min-h-screen bg-gradient-to-b from-black via-blue-950 text-white font-inter relative overflow-x-hidden">
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-b from-black via-blue-950 to-slate-900 flex items-center justify-center overflow-hidden">
+        <div className="absolute z-10 top-20 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center translate-x-[300px]">
+          <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
+        </div>
+        <div className="relative max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between px-10">
+          <div className="flex-1 -translate-x-[100px]">
+            <h1 className="text-4xl md:text-7xl lg:text-7xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
+              Empower Your Insurance<br />
+              Operations with Smart<br />
+              Knowledge Access
+            </h1>
+            <p className="text-1xl md:text-2xl text-white/90 mb-10 font-medium max-w-lg text-left h-full w-full">
+              Tingkatkan Kecepatan dan Ketepatan<br />
+              Layanan Asuransi
+            </p>
+            <div className="flex justify-start items-center gap-4 mb-10">
+              <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
+                Demo a Book
+              </button>
+            </div>
+          </div>
+          <div className="absolute z-1 flex-1 flex justify-end items-end translate-x-[750px] translate-y-[50px]">
+            <img src="/images/ImageInsurance1.svg" alt="Banking Chart" className="w-full max-w-lg md:max-w-xl h-auto object-contain" />
+          </div>
+        </div>
       </section>
 
-      {/* Solusi Brilian.AI */}
-      <section className="bg-[#0B0E2D] px-6 py-16">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-10">
-            Solusi dari Brilian.AI
-          </h2>
-
-          <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-            <div className="text-white max-w-xl text-center md:text-left">
-              <p className="text-gray-300 leading-relaxed">
-               Brilian.AI adalah platform AI-powered knowledge management yang membantu tim asuransi menemukan informasi penting, memahami kebijakan, serta merespons pertanyaan secara instan dan konsisten — seperti memiliki "asisten AI internal" yang selalu siaga.
+      {/* Solusi Brilian.AI Section */}
+      <section className="relative py-16 bg-slate-900 overflow-hidden">
+        <div className="relative max-w-6xl mx-auto px-10">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-8 text-center relative z-20">Solusi dari Brilian.AI</h2>
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-6">
+              <p className="text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed">
+                Brilian.AI adalah platform AI-powered<br />
+                knowledge management yang membantu tim <br />
+                asuransi menemukan informasi penting, <br />
+                memahami kebijakan, serta merespons <br />  
+                pertanyaan secara instan dan konsisten — <br />
+                seperti memiliki "asisten AI internal" yang <br />
+                selalu siaga.
               </p>
             </div>
-            <div className="flex-shrink-0">
-              <img src="/images/ImageInsurance2.svg" alt="Solusi Brilian.AI" className="w-48 md:w-60" />
+            <div className="flex justify-center relative z-10">
+              <img src="/images/ImageInsurance2.svg" alt="Solusi Brilian.AI" className="w-full max-w-md h-auto object-contain scale-[2] translate-x-[200px] translate-y-[-50px]" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="relative px-6 py-16 bg-[#0B0E2D]">
-        <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
-          <div className="flex-1 flex flex-col justify-center h-full">
-            <div className="mb-10">
-              <h3 className="text-2xl md:text-3xl font-semibold text-white text-center">
-                 Benefits for Insurance <br /> Companies
-              </h3>
-            </div>
-
-            <ul className="space-y-6">
-              {[
-                "Percepat waktu respon klaim & underwriting",
-                "Konsistensi jawaban di semua touchpoint (agen, CS, tim operasional)",
-                "Pengambilan keputusan lebih cepat & berbasis data",
-                "Kurangi kesalahan akibat misinterpretasi dokumen",
-                "Tingkatkan produktivitas & kepuasan nasabah",
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
-                  <span className="w-4 h-4 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
-                  <span className="text-white text-lg md:text-xl leading-relaxed max-w-md">{item}</span>
-                </li>
-              ))}
+      <section className="relative py-16 bg-gradient-to-b from-slate-900 via-[#101A2F] to-black overflow-hidden">
+        <h3 className="relative z-20 text-4xl md:text-5xl font-semibold text-white mb-32 text-center"> Benefits for Insurance 
+          <br />Companies</h3>
+        <div className="max-w-6xl mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-12">
+          <div className="flex-1">
+            <ul className="space-y-6 relative z-20">
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Percepat waktu respon klaim <br />& underwriting</span>
+              </li>
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Konsistensi jawaban di semua<br /> touchpoint (agen, CS, tim<br /> operasional)</span>
+              </li>
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Pengambilan keputusan lebih<br /> cepat & berbasis data</span>
+              </li>
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Kurangi kesalahan akibat<br /> misinterpretasi dokumen</span>
+              </li>
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Tingkatkan produktivitas &<br />kepuasan nasabah</span>
+              </li>
             </ul>
           </div>
-
-          <div className="flex-none w-[180px] md:w-[280px]">
-            <img src="/images/ImageInsurance3.svg" alt="Banking Chart" className="w-full h-auto" />
+          <div className="flex-none w-[180px] md:w-[280px] relative z-10">
+            <img src="/images/ImageInsurance3.svg" alt="Banking Chart" className="w-full max-w-md h-auto object-contain scale-[2] translate-x-[100px] translate-y-[-50px] mb-[100px]" />
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="px-6 py-16 text-center bg-black text-white relative">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl md:text-4xl font-semibold leading-snug mb-6">
-            Siap Transformasi Pengetahuan <br />
-            Menjadi Keunggulan Kompetitif?
+      <section
+        className="relative py-20 overflow-hidden flex flex-col items-center justify-center "
+        style={{
+          background: `#000000 url('/images/SHADOWLPBG.png') center/contain no-repeat`
+        }}
+      >
+        {/* Title */}
+        <div className="text-center mb-10 mt-20 ">
+          <h3 className="text-3xl md:text-5xl font-semibold leading-snug text-white mb-10">
+            Siap Mendefinisikan Ulang Efisiensi<br /> di Dunia Asuransi?
           </h3>
-
-          <p className="text-lg text-gray-300 mb-12">
-            Brilian.AI bantu tim Anda mengambil keputusan
-            <span className="text-blue-400 font-medium"> lebih cepat, akurat</span>, dan
-            <span className="text-blue-400 font-medium"> berbasis data internal</span> yang selama ini belum tergali.
+          <p className="text-2xl md:text-4xl text-white font-inter font-normal">
+            Brilian.AI bantu tim asuransi Anda mengelola<br /> informasi lebih cerdas dan merespon lebih cepat.
           </p>
+        </div>
 
-          <div className="bg-[#0B122E] border border-blue-500/40 rounded-2xl px-6 py-8 shadow-xl max-w-2xl mx-auto">
-            <div className="flex justify-center mb-3">
-              <span className="bg-gradient-to-r from-blue-600 to-purple-500 text-xs text-white font-medium px-3 py-1 rounded-full shadow">
-                🆕 New: Our AI integration just landed
-              </span>
+        {/* Card content */}
+        <div className="relative z-10 w-full flex justify-center items-center mb-20">
+          <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-5xl px-8 py-10 rounded-2xl"
+            style={{
+              background: "rgba(10, 20, 40, 0.59)",
+              backdropFilter: 'blur(10px)',
+              WebkitBackdropFilter: 'blur(10px)',
+              boxShadow: "0 0 32px 8px #2196F3, 0 0 0 2px #2196F3",
+            }}
+          >
+            {/* Card content remains unchanged */}
+            <div className="absolute left-1/2 -translate-x-20 -translate-y-10 w-auto h-20 animate-pulse delay-500 opacity-30 z-30 pointer-events-none">
+              <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
             </div>
 
-            <h4 className="text-xl font-semibold mb-1">Get started today!</h4>
-            <p className="text-gray-400 text-sm mb-6">Siap Mempercepat Akses Pengetahuan Anda?</p>
-
-            <div className="flex justify-center gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold">
-                Get Started
-              </button>
-              <button className="bg-white text-black px-6 py-2 rounded-lg font-semibold hover:bg-gray-200">
-                Book a demo
-              </button>
+            {/* Left Side: Text */}
+            <div className="flex-1 text-left pr-0 md:pr-10">
+              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3">Get started today!</h2>
+              <p className="text-3xl md:text-4xl font-extralight text-white w-full">
+                Siap Mempercepat Akses <br /> Pengetahuan Anda?
+              </p>
+            </div>
+            {/* Right Side: Badge + Buttons */}
+            <div className="flex-1 flex flex-col items-center md:items-end gap-6 w-full md:w-auto">
+              {/* Badge */}
+              <div className="w-full md:w-auto flex justify-center md:justify-center">
+                <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 rounded-full px-8 py-4 mb-4 min-w-[300px] justify-center">
+                  <img
+                    src="/images/Image-BintangBG.png"
+                    alt="Star"
+                    className="w-5 h-5 animate-pulse opacity-60"
+                  />
+                  <span className="text-blue-300 text-sm font-inter font-normal">New: Our AI integration just landed</span>
+                </div>
+              </div>
+              {/* Buttons */}
+              <div className="flex gap-5 w-full md:w-auto justify-center md:justify-end">
+                <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
+                  Get Started
+                </button>
+                <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg text-white bg-blue-600/20 border border-blue-500/30 hover:bg-blue-600/30 hover:border-blue-500/60 hover:shadow-md hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer font-inter font-light">
+                  Start for free
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-[#030416] py-6 text-center text-sm text-gray-500">
-        <p>© {new Date().getFullYear()} Manusia.AI · Product · Work · Blog · Pricing</p>
-        <div className="mt-2 space-x-4">
-          <a href="#" className="hover:underline" rel="noopener noreferrer" target="_blank">
-            Instagram
-          </a>
-          <a href="#" className="hover:underline" rel="noopener noreferrer" target="_blank">
-            LinkedIn
-          </a>
-        </div>
-      </footer>
     </div>
   );
 }

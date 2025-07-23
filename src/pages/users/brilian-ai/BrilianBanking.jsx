@@ -2,100 +2,107 @@ import React from 'react';
 
 export default function BrilianBanking() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-black via-slate-900 to-blue-950 text-white font-inter relative overflow-x-hidden">
+    <div className="w-full min-h-screen bg-gradient-to-b from-black via-blue-950 text-white font-inter relative overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-black via-blue-950 to-blue-900 flex items-center justify-center overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-b from-black via-blue-950 to-slate-900 flex items-center justify-center overflow-hidden">
         <div className="absolute z-10 top-20 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center translate-x-[300px]">
           <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
         </div>
         <div className="relative max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between px-10">
-          <div className="flex-1 -translate-x-[100px] ">
+          <div className="flex-1 -translate-x-[100px]">
             <h1 className="text-4xl md:text-7xl lg:text-7xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
               Smarter Decision-Making <br /> Banking & Multifinance
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-10 font-medium max-w-lg text-left">
+            <p className="text-1xl md:text-2xl text-white/90 mb-10 font-medium max-w-lg text-left h-full w-full">
               Ubah Data Tak Terstruktur Jadi <br /> Keputusan yang Cerdas
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg text-lg">
-              Book a demo
+            <div className="flex justify-start items-center gap-4 mb-10">
+            <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
+                Demo a Book
             </button>
           </div>
-          <div className="absolute z-1flex-1 flex justify-end items-end translate-x-[750px] ml-30 ">
-            <img src="/images/ImageIndustriBanking1.svg" alt="Banking Chart" className="w-full max-w-lg md:max-w-xl h-auto object-contain drop-shadow-2xl" />
+          </div>
+          <div className="absolute z-1 flex-1 flex justify-end items-end translate-x-[750px] translate-y-[50px]">
+            <img src="/images/ImageIndustriBanking1.svg" alt="Banking Chart" className="w-full max-w-lg md:max-w-xl h-auto object-contain" />
           </div>
         </div>
       </section>
 
       {/* Solusi Brilian.AI Section */}
-      <section className="relative py-16 bg-gradient-to-b from-blue-900 via-black via-black to-[#162A4D] overflow-hidden">
-        <div className="relative z-10 max-w-6xl mx-auto px-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center">Solusi dari Brilian.AI</h2>
+      <section className="relative py-16 bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900 overflow-hidden">
+        <div className="relative max-w-6xl mx-auto px-10">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-8 text-center relative z-20">Solusi dari Brilian.AI</h2>
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className='space-y-6 '>
+            <div className="space-y-6">
               <p className="text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed">
-                Brilian.AI adalah platform AI-powered knowledge<br />
-                management yang membantu tim perbankan & <br />
-                multifinance menemukan informasi penting,<br />
-                merangkum dokumen, dan menjawab pertanyaan<br />
-                secara instan—layaknya “ChatGPT internal” yang <br />
-                aman dan terkendali.
+                Brilian.AI adalah platform AI-powered knowledge management yang membantu tim perbankan & multifinance
+                menemukan informasi penting, merangkum dokumen, dan menjawab pertanyaan secara instan—layaknya
+                <span className="italic"> “ChatGPT internal”</span> yang aman dan terkendali.
               </p>
             </div>
-            <div className="flex justify-center">
-              <img src="/images/ImageIndustriBanking2.svg" alt="Solusi Brilian.AI" className="w-full max-w-md h-auto object-contain scale-[2]" />
+            <div className="flex justify-center relative z-10">
+              <img src="/images/ImageIndustriBanking2.svg" alt="Solusi Brilian.AI" className="w-full max-w-md h-auto object-contain scale-[2] translate-x-[100px] translate-y-[-50px]" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="relative py-16 bg-gradient-to-b from-[#162A4D] via-[#101A2F] to-black overflow-hidden">
-        <div className="relative z-10 max-w-6xl mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-12">
+      <section className="relative py-16 bg-gradient-to-b from-slate-900 via-[#101A2F] to-black overflow-hidden">
+        <h3 className="relative z-20 text-4xl md:text-5xl font-semibold text-white mb-32 text-center">Benefits for Banks & Multifinance</h3>
+        <div className="max-w-6xl mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1">
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center">Benefits for Banks & Multifinance</h3>
-            <ul className="space-y-6">
-              {[
-                "Menghemat waktu pencarian informasi & riset internal hingga 80%",
-                "Mempercepat pengambilan keputusan kredit & operasional",
-                "Meningkatkan konsistensi informasi antar cabang",
-                "Mendukung efisiensi customer service dan complaint handling",
-                "Mempercepat onboarding karyawan baru",
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
-                  <span className="w-4 h-4 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
-                  <span className="text-lg md:text-xl text-white/90 leading-relaxed">{item}</span>
-                </li>
-              ))}
+            <ul className="space-y-6 relative z-20">
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Menghemat waktu pencarian <br />informasi & riset internal <br />hingga 80%</span>
+              </li>
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mempercepat pengambilan <br />keputusan kredit & operasional</span>
+              </li>
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Meningkatkan konsistensi <br />informasi antar cabang</span>
+              </li>
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mendukung efisiensi customer <br />service dan complaint handling</span>
+              </li>
+              <li className="flex items-center gap-6">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mempercepat onboarding <br />karyawan baru</span>
+              </li>
             </ul>
           </div>
-          <div className="flex-none w-[180px] md:w-[280px]">
-            <img src="/images/ImageIndustriBanking3.svg" alt="Banking Chart" className="w-full h-auto object-contain" />
+          <div className="flex-none w-[180px] md:w-[280px] relative z-10">
+            <img src="/images/ImageIndustriBanking3.svg" alt="Banking Chart" className="w-full max-w-md h-auto object-contain scale-[2] translate-x-[100px] translate-y-[-50px] mb-[100px]" />
           </div>
         </div>
       </section>
 
+      {/* CTA Section */}
       <section
-        className="relative py-24 overflow-hidden flex flex-col items-center justify-center"
+        className="relative py-20 overflow-hidden flex flex-col items-center justify-center "
         style={{
           background: `#000000 url('/images/SHADOWLPBG.png') center/contain no-repeat`
         }}
       >
         {/* Title */}
-        <div className="text-center mb-36">
-          <h3 className="text-3xl md:text-5xl font-bold leading-snug text-white mb-4">
+        <div className="text-center mb-10 mt-20 ">
+          <h3 className="text-3xl md:text-5xl font-semibold leading-snug text-white mb-10">
             Siap Transformasi Pengetahuan <br />
             Menjadi Keunggulan Kompetitif?
           </h3>
-          <p className="text-lg md:text-xl text-gray-300">
-            Brilian.AI bantu tim Anda mengambil keputusan
-            <span className="text-blue-400 font-medium"> lebih cepat, akurat</span>, dan
-            <span className="text-blue-400 font-medium"> berbasis data internal</span> yang selama ini belum tergali.
+          <p className="text-2xl md:text-4xl text-white font-inter font-normal">
+            Brilian.AI bantu tim Anda mengambil keputusan lebih<br />
+            cepat, akurat, dan berbasis data internal yang <br />
+            selama ini belum tergali.
           </p>
         </div>
 
-
         {/* Card content */}
-        <div className="relative z-10 w-full flex justify-center items-center">
+        <div className="relative py-24 overflow-hidden w-full flex justify-center items-center mb-20">
           <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-5xl px-8 py-10 rounded-2xl"
             style={{
               background: "rgba(10, 20, 40, 0.59)",
@@ -117,7 +124,7 @@ export default function BrilianBanking() {
               </p>
             </div>
             {/* Right Side: Badge + Buttons */}
-            <div className="flex-1 flex flex-col items-center md:items-end gap-6 w-full md:w-auto mt-8 md:mt-0">
+            <div className="flex-1 flex flex-col items-center md:items-end gap-6 w-full md:w-auto">
               {/* Badge */}
               <div className="w-full md:w-auto flex justify-center md:justify-center">
                 <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 rounded-full px-8 py-4 mb-4 min-w-[300px] justify-center">

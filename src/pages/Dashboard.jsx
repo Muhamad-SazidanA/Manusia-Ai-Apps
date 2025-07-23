@@ -31,7 +31,7 @@ export default function Dashboard() {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-inter font-bold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
             Custom AI for Your<br />
             Real Business Challenges
           </h1>
@@ -135,7 +135,7 @@ export default function Dashboard() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white mb-8">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold text-white mb-8">
               What is Manusia.AI
             </h2>
           </div>
@@ -181,7 +181,7 @@ export default function Dashboard() {
           <div className="text-center mb-4">
             <div className="flex justify-center items-center gap-4 mb-2">
               <img src="/images/Image-BintangBG.png" alt="" className="w-24 h-24 animate-pulse opacity-80" />
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white">Brilian.AI</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold text-white">Brilian.AI</h2>
               <img src="/images/Image-BintangBG.png" alt="" className="w-24 h-24 animate-pulse opacity-80" />
             </div>
             <div className="absolute z-20 text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed">
@@ -234,7 +234,7 @@ export default function Dashboard() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold text-white mb-4">
               AI-powered knowledge<br /> management platform
             </h2>
           </div>
@@ -345,7 +345,7 @@ export default function Dashboard() {
               alt="Star"
               className="w-auto h-20 mr-4 animate-pulse"
             />
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-medium text-white">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-inter font-semibold text-white">
               Rangkum.AI
             </h2>
             <img
@@ -585,7 +585,7 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-inter font-medium text-white">
+            <h2 className="text-4xl md:text-5xl font-inter font-semibold  text-white">
               <span className="text-white">Blog</span> <span className="text-gray-300">&amp; Case Studies</span>
             </h2>
           </div>

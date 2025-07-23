@@ -4,9 +4,9 @@ export default function BrilianAI() {
     return (
         <div className="w-full min-h-screen bg-gradient-to-b from-black via-slate-900 to-blue-950 text-white font-inter relative overflow-x-hidden">
             {/* Hero Section */}
-            <section className="relative py-0 bg-gradient-to-b from-black via-blue-950 to-blue-900 flex items-center justify-center overflow-hidden">
-                {/* Bintang dengan posisi absolut yang tidak mempengaruhi layout */}
-                <div className="absolute top-20 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center">
+            <section className="relative py-0 bg-gradient-to-b from-black via-blue-950 to-blue-900 flex items-center justify-center">
+                {/* Bintang dengan posisi absolut */}
+                <div className="absolute w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center">
                     <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
                 </div>
 
@@ -15,16 +15,23 @@ export default function BrilianAI() {
                         <h1 className="text-4xl md:text-7xl lg:text-7xl font-inter font-semibold mb-5 leading-[1.3] pb-[10px] bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] text-transparent bg-clip-text">
                             Brilian.AI
                         </h1>
-                        <p className="w-full overflow-x-auto text-2xl md:text-3xl text-white/90 mb-10 font-medium max-w-lg text-left">
+                        <p className="text-1xl md:text-2xl font-inter font-normal text-white/90 leading-relaxed mb-10">
                             Accelerate Decisions with AI-Powered
                             <br />Knowledge Management
                         </p>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg text-lg">
-                            Book a demo
-                        </button>
+                        <div className="flex justify-start items-center gap-4">
+                            <button className="px-5 py-3 min-w-[80px] rounded-xl font-semibold text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-lg border border-blue-300 hover:scale-105 transition-all duration-200">
+                                Demo a Book
+                            </button>
+                        </div>
                     </div>
                     <div className="flex-1 flex justify-end items-end translate-x-10 ml-30">
-                        <img src="/images/BrilianContentDS.svg" alt="brilian.ai" className="w-full max-w-lg md:max-w-xl h-auto object-contain drop-shadow-2xl" />
+                        <img
+                            src="/images/BrilianContentDS.svg"
+                            alt="brilian.ai"
+                            className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover drop-shadow-2xl"
+                            style={{ maxHeight: '100%' }}
+                        />
                     </div>
                 </div>
 
@@ -268,7 +275,7 @@ export default function BrilianAI() {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 }
