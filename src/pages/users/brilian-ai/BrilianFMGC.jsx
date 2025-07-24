@@ -6,7 +6,7 @@ export default function BrilianFMGC() {
       {/* Hero Section */}
       <section className="min-h-screen py-20 px-6 md:px-16 flex items-center justify-center bg-gradient-to-b from-black via-blue-950 to-slate-900 overflow-hidden relative">
         {/* Hiasan bintang */}
-        <div className="absolute z-10 top-20 right-40 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center -translate-x-[200px]">
+        <div className="absolute z-10 button-30 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center -translate-x-[100px]">
           <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
         </div>
         <div className="relative max-w-6xl w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-0 md:px-10 gap-10">
@@ -28,7 +28,7 @@ export default function BrilianFMGC() {
           </div>
           {/* Kanan: Gambar */}
           <div className="flex-1 flex justify-center items-center">
-            <img src="/images/ImageFMGC1.svg" alt="Banking Chart" className=" absolute z-1w-full max-w-lg md:max-w-1xl h-auto object-contain drop-shadow-2xl translate-x-[50px]" />
+            <img src="/images/ImageFMGC1.svg" alt="Banking Chart" className=" absolute z-1w-full max-w-lg md:max-w-1xl h-auto object-contain drop-shadow-2xl translate-x-[50px] translate-y-[50px]" />
           </div>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default function BrilianFMGC() {
               <img
                 src="/images/ImageFMGC2.svg"
                 alt="Solusi Brilian.AI"
-                className="w-full max-w-md h-auto object-contain scale-[1.5] "
+                className="w-full max-w-md h-auto object-contain scale-[1.5] translate-y-[100px] translate-x-[50px]"
               />
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function BrilianFMGC() {
             <img
               src="/images/ImageFMGC3.svg"
               alt="Banking Chart"
-              className="w-full max-w-md h-auto object-contain scale-[2.2] -translate-x-[60px] translate-y-[30px] mb-[100px]"
+              className="w-full max-w-md h-auto object-contain scale-[2.2] translate-y-[100px] translate-x-[50px] mb-[100px]"
             />
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function BrilianFMGC() {
       >
         {/* Hiasan gambar di tengah section */}
         <img
-          src="/images/SHADOWLPBG.png"
+          src="/images/SHADOWLPBG.svg"
           alt="Shadow Background"
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-auto max-w-[100vw] max-h-[100vh] opacity-80 pointer-events-none z-0"
           draggable={false}

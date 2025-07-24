@@ -43,7 +43,7 @@ export default function BrilianBanking() {
                 multifinance menemukan informasi penting, <br />
                 merangkum dokumen, dan menjawab pertanyaan <br />
                 secara instan—layaknya “ChatGPT internal” yang <br />
-                aman dan terkendali.  
+                aman dan terkendali.
               </p>
             </div>
             <div className="flex justify-center relative z-10 ">
@@ -59,41 +59,41 @@ export default function BrilianBanking() {
 
       {/* Benefits Section */}
       <section className="relative py-16 bg-gradient-to-b from-slate-900 via-[#101A2F] to-black overflow-hidden">
-              <h3 className="relative z-20 text-4xl md:text-5xl font-semibold text-white mb-40 text-center">Benefits for Banks & Multifinance</h3>
-              <div className="max-w-6xl mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-12">
-                <div className="flex-1">
-                  <ul className="space-y-6 relative z-20">
-                    <li className="flex items-center gap-6 ml-[-30px]">
-                      <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
-                      <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed ">Menghemat waktu pencarian<br /> informasi & riset internal<br />hingga 80%</span>
-                    </li>
-                    <li className="flex items-center gap-6 ml-[-30px]">
-                      <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
-                      <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mempercepat pengambilan<br />keputusan kredit & operasional</span>
-                    </li>
-                    <li className="flex items-center gap-6 ml-[-30px]">
-                      <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
-                      <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Meningkatkan konsistensi<br />informasi antar cabang</span>
-                    </li>
-                    <li className="flex items-center gap-6 ml-[-30px]">
-                      <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
-                      <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mendukung efisiensi customer<br />service dan complaint handling</span>
-                    </li>
-                    <li className="flex items-center gap-6 ml-[-30px]">
-                      <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
-                      <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mempercepat onboarding<br />karyawan baru</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="flex-none w-[180px] md:w-[280px] relative z-10">
-                  <img
-                    src="/images/ImageIndustriBanking3.svg"
-                    alt="Banking Chart"
-                    className="w-full max-w-md h-auto object-contain scale-[2.2] -translate-x-[60px] translate-y-[30px] mb-[100px]"
-                  />
-                </div>
-              </div>
-            </section>
+        <h3 className="relative z-20 text-4xl md:text-5xl font-semibold text-white mb-40 text-center">Benefits for Banks & Multifinance</h3>
+        <div className="max-w-6xl mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-12">
+          <div className="flex-1">
+            <ul className="space-y-6 relative z-20">
+              <li className="flex items-center gap-6 ml-[-30px]">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed ">Menghemat waktu pencarian<br /> informasi & riset internal<br />hingga 80%</span>
+              </li>
+              <li className="flex items-center gap-6 ml-[-30px]">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mempercepat pengambilan<br />keputusan kredit & operasional</span>
+              </li>
+              <li className="flex items-center gap-6 ml-[-30px]">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Meningkatkan konsistensi<br />informasi antar cabang</span>
+              </li>
+              <li className="flex items-center gap-6 ml-[-30px]">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mendukung efisiensi customer<br />service dan complaint handling</span>
+              </li>
+              <li className="flex items-center gap-6 ml-[-30px]">
+                <span className="w-8 h-8 mt-1 rounded-full bg-gradient-to-b from-[#97BDFD] to-[#1A62DC] flex-shrink-0" />
+                <span className="text-1xl md:text-3xl font-inter font-normal text-white/90 leading-relaxed">Mempercepat onboarding<br />karyawan baru</span>
+              </li>
+            </ul>
+          </div>
+          <div className="flex-none w-[180px] md:w-[280px] relative z-10">
+            <img
+              src="/images/ImageIndustriBanking3.svg"
+              alt="Banking Chart"
+              className="w-full max-w-md h-auto object-contain scale-[2.2] -translate-x-[60px] translate-y-[30px] mb-[100px]"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section
@@ -104,7 +104,7 @@ export default function BrilianBanking() {
       >
         {/* Hiasan gambar di tengah section */}
         <img
-          src="/images/SHADOWLPBG.png"
+          src="/images/SHADOWLPBG.svg"
           alt="Shadow Background"
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-auto max-w-[100vw] max-h-[100vh] opacity-80 pointer-events-none z-0"
           draggable={false}

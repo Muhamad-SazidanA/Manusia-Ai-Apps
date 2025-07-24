@@ -220,7 +220,7 @@ export default function BrilianAI() {
             <section
                 className="relative py-24 overflow-hidden flex items-center justify-center"
                 style={{
-                    background: `#000000 url('/images/SHADOWLPBG.png') center/contain no-repeat`
+                    background: `#000000 url('/images/SHADOWLPBG.svg') center/contain no-repeat`
                 }}
             >
                 {/* Bintang di atas card, absolute dan z-30 */}

@@ -5,10 +5,7 @@ export default function BrilianInsurance() {
     <div className="w-full min-h-screen bg-gradient-to-b from-black via-blue-950 text-white font-inter relative overflow-x-hidden">
       {/* Hero Section */}
       <section className="min-h-screen py-20 px-6 md:px-16 flex items-center justify-center bg-gradient-to-b from-black via-blue-950 to-slate-900 overflow-hidden relative">
-        {/* Hiasan bintang */}
-        <div className="absolute z-10 top-20 right-40 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center -translate-x-[200px]">
-          <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
-        </div>
+
         <div className="relative max-w-6xl w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-0 md:px-10 gap-10">
           {/* Kiri: Teks dan Button */}
           <div className="flex-1 flex flex-col items-start justify-center">
@@ -29,7 +26,7 @@ export default function BrilianInsurance() {
           </div>
           {/* Kanan: Gambar */}
           <div className="flex-1 flex justify-center items-center">
-            <img src="/images/ImageInsurance1.svg" alt="Banking Chart" className=" absolute z-1w-full max-w-lg md:max-w-1xl h-auto object-contain drop-shadow-2xl translate-x-[50px]" />
+            <img src="/images/ImageInsurance1.svg" alt="Banking Chart" className=" absolute z-1w-full max-w-lg md:max-w-1xl h-auto object-contain scale-[1.5] drop-shadow-2xl translate-x-[100px] -translate-y-[50px]" />
           </div>
         </div>
       </section>
@@ -54,7 +51,7 @@ export default function BrilianInsurance() {
               <img
                 src="/images/ImageInsurance2.svg"
                 alt="Solusi Brilian.AI"
-                className="w-full max-w-md h-auto object-contain scale-[1.5] "
+                className="w-full max-w-md h-auto object-contain scale-[1.5] translate-x-[100px]"
               />
             </div>
           </div>
@@ -63,8 +60,8 @@ export default function BrilianInsurance() {
 
       {/* Benefits Section */}
       <section className="relative py-16 bg-gradient-to-b from-slate-900 via-[#101A2F] to-black overflow-hidden">
-        <h3 className="relative z-20 text-4xl md:text-5xl font-semibold text-white mb-40 text-center">Benefits for Insurance 
-                  <br />Companies</h3>
+        <h3 className="relative z-20 text-4xl md:text-5xl font-semibold text-white mb-40 text-center">Benefits for Insurance
+          <br />Companies</h3>
         <div className="max-w-6xl mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1">
             <ul className="space-y-6 relative z-20">
@@ -109,7 +106,7 @@ export default function BrilianInsurance() {
       >
         {/* Hiasan gambar di tengah section */}
         <img
-          src="/images/SHADOWLPBG.png"
+          src="/images/SHADOWLPBG.svg"
           alt="Shadow Background"
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-auto max-w-[100vw] max-h-[100vh] opacity-80 pointer-events-none z-0"
           draggable={false}
