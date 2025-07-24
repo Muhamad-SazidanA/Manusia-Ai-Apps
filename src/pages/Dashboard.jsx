@@ -197,7 +197,7 @@ export default function Dashboard() {
               <img
                 src="/images/BrilianContentDS.svg"
                 alt="Brilian.AI"
-                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain transform lg:scale-[1.8] -translate-x-[50px] translate-y-[100px] drop-shadow-2xl"
+                className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain transform lg:scale-[1.5] -translate-x-[100px] drop-shadow-2xl"
                 style={{ maxHeight: 400 }}
               />
             </div>
@@ -379,7 +379,7 @@ export default function Dashboard() {
               <img
                 src="/images/RangkumContentDS.svg"
                 alt="Rangkum.AI"
-                className="w-full max-w-2xl h-auto object-contain opacity-60 translate-y-[50px] drop-shadow-2xl"
+                className="w-full max-w-2xl h-auto object-contain opacity-60 translate-y-[50px] translate-x-[100px]"
                 style={{
                   maxHeight: 600, // Move image down to overlap with cards
                 }}
@@ -387,47 +387,55 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12 mt-2 relative z-30 -translate-y-[100px]">
-            {/* Card tetap seperti semula dengan z-index lebih tinggi */}
-            {/* Intelligent Document Processing - Purple Color */}
-            <div className="flex flex-col  justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/60 hover:bg-purple-900/20 transition-all duration-300 relative z-30 "
-              style={{ boxShadow: '0 0 20px 4px rgba(139,92,246,0.3)' }}>
-              <h3
-                className="text-l font-inter font-normal text-purple-300 text-left leading-snug drop-shadow-sm mb-4"
-                style={{ textShadow: '0 0 4px rgba(168,85,247,0.4)' }}
-              >
+          <div className="grid md:grid-cols-3 gap-8  relative z-10 -translate-y-[130px]">
+            {/* IDP - Purple */}
+            <div className="group bg-slate-900/80 rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/60 transition-all duration-300
+    hover:bg-white/10 hover:backdrop-blur-sm"
+              style={{ boxShadow: '0 0 20px 4px  rgba(168,85,247,0.4)' }}>
+              <h3 className="text-xl font-medium font-inter text-purple-300 mb-4 leading-snug"
+                style={{ textShadow: '0 0 4px rgba(168,85,247,0.4)' }}>
                 Intelligent Document Processing (IDP) <br /> dan OCR AI Canggih
               </h3>
-              <div className="bg-[#1E293B] p-3 rounded-lg flex justify-center items-center">
-                <img src="/images/Image-IDP.png" alt="IDP Processing" className="h-28 object-contain" />
+              <div className="bg-slate-800/50 rounded-lg p-4 transition-all duration-300">
+                <img
+                  src="/images/Image-IDP.png"
+                  alt="IDP Processing"
+                  className="w-full h-24 object-cover rounded"
+                />
               </div>
             </div>
 
-            {/* Otomatisasi Alur Kerja - Cyan Color */}
-            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 mt-8 border border-cyan-400/30 hover:border-cyan-400/60 hover:bg-cyan-900/20 transition-all duration-300 relative z-30"
-              style={{ boxShadow: '0 0 20px 4px rgba(34,211,238,0.3)' }}>
-              <h3
-                className="text-l font-inter font-normal text-cyan-300 text-left leading-snug drop-shadow-sm mb-4"
-                style={{ textShadow: '0 0 4px rgba(34,211,238,0.4)' }}
-              >
+            {/* Otomatisasi - Cyan */}
+            <div className="group bg-slate-900/80 rounded-xl p-6 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300
+    hover:bg-white/10 hover:backdrop-blur-sm translate-y-[30px]"
+              style={{ boxShadow: '0 0 20px 4px rgba(34,211,238,0.4)' }}>
+              <h3 className="text-xl font-medium font-inter text-cyan-300 mb-4 leading-snug"
+                style={{ textShadow: '0 0 4px rgba(34,211,238,0.4)' }}>
                 Otomatisasi Alur Kerja dan <br /> Integrasi Sistem
               </h3>
-              <div className="bg-[#1E293B] p-3 rounded-lg flex justify-center items-center">
-                <img src="/images/Image-Otomatisasi.png" alt="Workflow Automation" className="h-28 object-contain" />
+              <div className="bg-slate-800/50 rounded-lg p-4 transition-all duration-300">
+                <img
+                  src="/images/Image-Otomatisasi.png"
+                  alt="Workflow Automation"
+                  className="w-full h-24 object-cover rounded"
+                />
               </div>
             </div>
 
-            {/* Integrasi Mudah - Orange Color */}
-            <div className="flex flex-col justify-between h-64 w-full max-w-sm bg-[#0F172A] rounded-xl p-6 border border-orange-500/30 hover:border-orange-500/60 hover:bg-orange-900/20 transition-all duration-300 relative z-30"
-              style={{ boxShadow: '0 0 20px 4px rgba(251,146,60,0.3)' }}>
-              <h3
-                className="text-l font-inter font-normal text-orange-300 text-left text-[#FC6D2D] leading-snug drop-shadow-sm mb-4"
-                style={{ textShadow: '0 0 4px rgba(251,146,60,0.4)' }}
-              >
+            {/* Integrasi - Orange */}
+            <div className="group bg-slate-900/80 rounded-xl p-6 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-300
+                 hover:bg-white/10 hover:backdrop-blur-sm"
+              style={{ boxShadow: '0 0 20px 4px rgba(251,146,60,0.4)' }}>
+              <h3 className="text-xl font-medium font-inter text-orange-300 mb-4 leading-snug"
+                style={{ textShadow: '0 0 4px rgba(251,146,60,0.4)' }}>
                 Integrasi Mudah
               </h3>
-              <div className="bg-[#1E293B] p-3 rounded-lg flex justify-center items-center">
-                <img src="/images/Image-Integrasi.png" alt="Easy Integration" className="h-28 object-contain" />
+              <div className="bg-slate-800/50 rounded-lg p-4 transition-all duration-300">
+                <img
+                  src="/images/Image-Integrasi.png"
+                  alt="Easy Integration"
+                  className="w-full h-24 object-cover rounded"
+                />
               </div>
             </div>
           </div>
@@ -456,16 +464,30 @@ export default function Dashboard() {
           {/* Gabungkan semua card dalam satu grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-fr">
             {/* Card 1 */}
-            <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#0075FF]/50 hover:border-[#0075FF]/80 transition-all duration-300 min-h-[230px] flex flex-col gap-2 justify-between"
-              style={{ boxShadow: 'rgba(0,117,255,0.3)' }}>
-              <div className="flex items-center gap-3">
+            <div className="relative group bg-slate-900/80 rounded-xl p-6 border border-[#0075FF]/30 hover:border-[#0075FF]/60 transition-all duration-300 hover:bg-white/10 hover:backdrop-blur-sm overflow-hidden">
+              {/* Inner Glow Layer */}
+              <div className="absolute inset-0 rounded-xl pointer-events-none" style={{
+                boxShadow: 'inset 0 0 40px rgba(0,117,255,0.3)'
+              }}></div>
+
+              {/* Header Icon + Title */}
+              <div className="flex items-center gap-3 mb-4 relative z-10">
                 <div className="w-10 h-10 bg-[#0075FF]/20 rounded-lg flex items-center justify-center">
                   <i className="fa-solid fa-coins text-[#0075FF] text-lg"></i>
                 </div>
-                <h4 className="text-xl font-bold text-[#0075FF]">Finance</h4>
+                <h4 className="text-xl font-bold text-[#0075FF]"
+                  style={{ textShadow: '0 0 4px rgba(0,117,255,0.5)' }}>
+                  Finance
+                </h4>
               </div>
-              <div className="text-white text-sm font-medium">Accounts Payable (AP) Automation</div>
-              <ul className="text-white/80 text-xs space-y-2">
+
+              {/* Deskripsi */}
+              <div className="text-sm text-white/80 font-medium mb-4 relative z-10">
+                Accounts Payable (AP) Automation
+              </div>
+
+              {/* List Benefit */}
+              <ul className="text-white/80 text-xs space-y-2 relative z-10">
                 <li className="flex gap-3 items-start">
                   <div className="w-1.5 h-1.5 bg-[#0075FF] rounded-full mt-1.5 flex-shrink-0" />
                   <span>Menurunkan waktu input invoice hingga 90% lebih cepat</span>
@@ -476,18 +498,29 @@ export default function Dashboard() {
                 </li>
               </ul>
             </div>
+            <div className="relative group bg-[#0B1426]/80 rounded-2xl p-6 border border-[#10E0C1]/40 hover:border-[#10E0C1]/80 transition-all duration-300 hover:bg-white/5 hover:backdrop-blur-sm overflow-hidden">
+              {/* Inner Glow */}
+              <div className="absolute inset-0 rounded-2xl pointer-events-none"
+                style={{ boxShadow: 'inset 0 0 40px rgba(16,224,193,0.3)' }}></div>
 
-            {/* Card 2 */}
-            <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#10E0C1]/50 hover:border-[#10E0C1]/80 transition-all duration-300 min-h-[230px] flex flex-col gap-2 justify-between"
-              style={{ boxShadow: '0 0 30px 8px rgba(16,224,193,0.3)' }}>
-              <div className="flex items-center gap-3">
+              {/* Header Icon + Title */}
+              <div className="flex items-center gap-3 relative z-10">
                 <div className="w-10 h-10 bg-[#10E0C1]/20 rounded-lg flex items-center justify-center">
                   <i className="fa-solid fa-cart-shopping text-[#10E0C1] text-lg"></i>
                 </div>
-                <h4 className="text-xl font-bold text-[#10E0C1]">Purchasing</h4>
+                <h4 className="text-xl font-bold text-[#10E0C1]"
+                  style={{ textShadow: '0 0 4px rgba(16,224,193,0.5)' }}>
+                  Purchasing
+                </h4>
               </div>
-              <div className="text-white text-sm font-medium">Purchase Order (PO) Automation</div>
-              <ul className="text-white/80 text-xs space-y-2">
+
+              {/* Deskripsi */}
+              <div className="text-white text-sm font-medium mt-2 relative z-10">
+                Purchase Order (PO) Automation
+              </div>
+
+              {/* List Benefit */}
+              <ul className="text-white/80 text-xs space-y-2 mt-2 relative z-10">
                 <li className="flex gap-3 items-start">
                   <div className="w-1.5 h-1.5 bg-[#10E0C1] rounded-full mt-1.5 flex-shrink-0" />
                   <span>Pembacaan dokumen penawaran harga dan PO secara instan</span>
@@ -499,17 +532,30 @@ export default function Dashboard() {
               </ul>
             </div>
 
-            {/* Card 3 */}
-            <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#FA12E3]/50 hover:border-[#FA12E3]/80 transition-all duration-300 min-h-[230px] flex flex-col gap-2 justify-between"
-              style={{ boxShadow: '0 0 30px 8px rgba(250,18,227,0.3)' }}>
-              <div className="flex items-center gap-3">
+
+            <div className="relative group bg-[#0B1426]/80 rounded-2xl p-6 border border-[#FA12E3]/40 hover:border-[#FA12E3]/80 transition-all duration-300 hover:bg-white/5 hover:backdrop-blur-sm overflow-hidden">
+              {/* Inner Glow */}
+              <div className="absolute inset-0 rounded-2xl pointer-events-none"
+                style={{ boxShadow: 'inset 0 0 40px rgba(250,18,227,0.25)' }}></div>
+
+              {/* Header Icon + Title */}
+              <div className="flex items-center gap-3 relative z-10">
                 <div className="w-10 h-10 bg-[#FA12E3]/20 rounded-lg flex items-center justify-center">
                   <i className="fa-solid fa-user-plus text-[#FA12E3] text-lg"></i>
                 </div>
-                <h4 className="text-xl font-bold text-[#FA12E3]">Sales</h4>
+                <h4 className="text-xl font-bold text-[#FA12E3]"
+                  style={{ textShadow: '0 0 4px rgba(250,18,227,0.5)' }}>
+                  Sales
+                </h4>
               </div>
-              <div className="text-white text-sm font-medium">Customer Onboarding Automation</div>
-              <ul className="text-white/80 text-xs space-y-2">
+
+              {/* Deskripsi */}
+              <div className="text-white text-sm font-medium mt-2 relative z-10">
+                Customer Onboarding Automation
+              </div>
+
+              {/* List Benefit */}
+              <ul className="text-white/80 text-xs space-y-2 mt-2 relative z-10">
                 <li className="flex gap-3 items-start">
                   <div className="w-1.5 h-1.5 bg-[#FA12E3] rounded-full mt-1.5 flex-shrink-0" />
                   <span>Mempercepat proses registrasi customer hanya dalam hitungan detik</span>
@@ -521,19 +567,32 @@ export default function Dashboard() {
               </ul>
             </div>
 
+
             {/* Baris kedua: Card 4 & 5 di tengah */}
             <div className="col-span-3 flex justify-center gap-8">
-              {/* Card 4 */}
-              <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#AB7AFF]/50 hover:border-[#AB7AFF]/80 transition-all duration-300 min-h-[230px] flex flex-col gap-2 justify-between"
-                style={{ boxShadow: '0 0 30px 8px rgba(171,122,255,0.3)' }}>
-                <div className="flex items-center gap-3">
+              <div className="relative group bg-[#0B1426]/80 rounded-2xl p-6 border border-[#AB7AFF]/40 hover:border-[#AB7AFF]/80 transition-all duration-300 hover:bg-white/5 hover:backdrop-blur-sm overflow-hidden">
+                {/* Inner Glow Effect */}
+                <div className="absolute inset-0 rounded-2xl pointer-events-none"
+                  style={{ boxShadow: 'inset 0 0 40px rgba(171,122,255,0.25)' }}></div>
+
+                {/* Header Icon + Title */}
+                <div className="flex items-center gap-3 relative z-10">
                   <div className="w-10 h-10 bg-[#AB7AFF]/20 rounded-lg flex items-center justify-center">
                     <i className="fa-solid fa-industry text-[#AB7AFF] text-lg"></i>
                   </div>
-                  <h4 className="text-xl font-bold text-[#AB7AFF]">Manufacture</h4>
+                  <h4 className="text-xl font-bold text-[#AB7AFF]"
+                    style={{ textShadow: '0 0 4px rgba(171,122,255,0.5)' }}>
+                    Manufacture
+                  </h4>
                 </div>
-                <div className="text-white text-sm font-medium">Goods Receipt & Stock Reconciliation</div>
-                <ul className="text-white/80 text-xs space-y-2">
+
+                {/* Deskripsi */}
+                <div className="text-white text-sm font-medium mt-2 relative z-10">
+                  Goods Receipt & Stock Reconciliation
+                </div>
+
+                {/* List Benefit */}
+                <ul className="text-white/80 text-xs space-y-2 mt-2 relative z-10">
                   <li className="flex gap-3 items-start">
                     <div className="w-1.5 h-1.5 bg-[#AB7AFF] rounded-full mt-1.5 flex-shrink-0" />
                     <span>Monitoring stok otomatis dari dokumen DO dan Surat Jalan</span>
@@ -545,17 +604,30 @@ export default function Dashboard() {
                 </ul>
               </div>
 
-              {/* Card 5 */}
-              <div className="bg-[#0B1426] rounded-2xl p-6 border border-[#FC6D2D]/50 hover:border-[#FC6D2D]/80 transition-all duration-300 min-h-[230px] flex flex-col gap-2 justify-between"
-                style={{ boxShadow: '0 0 30px 8px rgba(252,109,45,0.3)' }}>
-                <div className="flex items-center gap-3">
+
+              <div className="relative group bg-[#0B1426]/80 rounded-2xl p-6 border border-[#FC6D2D]/40 hover:border-[#FC6D2D]/80 transition-all duration-300 hover:bg-white/5 hover:backdrop-blur-sm overflow-hidden">
+                {/* Inner Glow Effect */}
+                <div className="absolute inset-0 rounded-2xl pointer-events-none"
+                  style={{ boxShadow: 'inset 0 0 40px rgba(252,109,45,0.25)' }}></div>
+
+                {/* Header Icon + Title */}
+                <div className="flex items-center gap-3 relative z-10">
                   <div className="w-10 h-10 bg-[#FC6D2D]/20 rounded-lg flex items-center justify-center">
                     <i className="fa-solid fa-users text-[#FC6D2D] text-lg"></i>
                   </div>
-                  <h4 className="text-xl font-bold text-[#FC6D2D]">Human Resource</h4>
+                  <h4 className="text-xl font-bold text-[#FC6D2D]"
+                    style={{ textShadow: '0 0 4px rgba(252,109,45,0.5)' }}>
+                    Human Resource
+                  </h4>
                 </div>
-                <div className="text-white text-sm font-medium">HR Onboarding Document Automation</div>
-                <ul className="text-white/80 text-xs space-y-2">
+
+                {/* Deskripsi */}
+                <div className="text-white text-sm font-medium mt-2 relative z-10">
+                  HR Onboarding Document Automation
+                </div>
+
+                {/* List Benefit */}
+                <ul className="text-white/80 text-xs space-y-2 mt-2 relative z-10">
                   <li className="flex gap-3 items-start">
                     <div className="w-1.5 h-1.5 bg-[#FC6D2D] rounded-full mt-1.5 flex-shrink-0" />
                     <span>Digitalisasi dokumen onboarding karyawan secara otomatis</span>

@@ -55,6 +55,7 @@ export default function BrilianAI() {
                     </div>
                 </div>
             </section>
+
             {/* Key Features Section */}
             <section className="pt-[100px] md:pt-[150px] pb-20 bg-gradient-to-b from-slate-900 via-[#101A2F] to-black overflow-hidden relative">
                 <div className="container mx-auto px-4 md:px-24 text-center relative z-10 mb-36">
@@ -102,7 +103,7 @@ export default function BrilianAI() {
                                     <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
                                             Cari informasi seperti berbicara dengan kolega.Brilian.AI 
                                             memungkinkan pengguna mengajukan pertanyaan dengan bahasa alami
-                                            (natural language), tanpa perlu tahu struktur file atau letak dokumen. Sistem akan menjawab langsung dari sumber data internal Anda.                                    </p>
+                                             (natural language), tanpa perlu tahu struktur file atau letak dokumen. Sistem akan menjawab langsung dari sumber data internal Anda.                                    </p>
                                 </div>
                             </div>
 
@@ -247,12 +248,11 @@ export default function BrilianAI() {
                                 <div className="w-full text-center md:text-left">
                                     <h1 className="text-3xl md:text-5xl font-semibold font-inter text-[#FC6D2D] mb-6">
                                         Pikirin Ide
-                                    </h1>   
+                                    </h1>
                                     <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
-                                        AI Brilian.ai membantu brainstorming otomatis berdasarkan 
-                                        konteks kerja dan data Anda dandari ide konten hingga sudut 
-                                        pandang unik, tanpa perlu mulai dari nol.                                    
-                                    </p>
+                                    AI Brilian.ai membantu brainstorming otomatis berdasarkan 
+                                    konteks kerja dan data Anda dandari ide konten hingga sudut 
+                                    pandang unik, tanpa perlu mulai dari nol.                                    </p>
                                 </div>
                             </div>
 
@@ -286,19 +286,20 @@ export default function BrilianAI() {
                                     </div>
                                 </div>
                                 {/* Teks Keterangan */}
-                                <div className="w-full text-center md:text-left">
+                                <div className="w-full text-center md:text-left md:max-w-xl">
                                     <h1 className="text-3xl md:text-5xl font-semibold font-inter text-[#10E0C1] mb-6">
                                         Rangkumin Meeting
                                     </h1>
                                     <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
-                                        Hasil meeting, baik online maupun offline, dapat langsung ditranskrip dan dirangkum otomatis. 
-                                        Dapatkan ringkasan poin penting yang siap dibagikan ke tim — tanpa perlu mengetik manual.
+                                      Hasil meeting, baik online maupun offline, dapat langsung ditranskrip dan dirangkum otomatis. 
+                                      Dapatkan ringkasan poin penting yang siap dibagikan ke tim — tanpa perlu mengetik manual.
                                     </p>
                                 </div>
                             </div>
                             {/* Garis Pemisah */}
                             <hr className="border-t-2 border-slate-700 mt-12" />
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -307,7 +308,7 @@ export default function BrilianAI() {
             <section
                 className="relative py-24 overflow-hidden flex items-center justify-center"
                 style={{
-                    background: `#000000 url('/images/SHADOWLPBG.svg') center/contain no-repeat`
+                    background: #000000 url('/images/SHADOWLPBG.png') center/contain no-repeat
                 }}
             >
                 {/* Bintang di atas card, absolute dan z-30 */}

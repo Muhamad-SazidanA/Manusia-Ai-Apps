@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function Blog() {
+export default function CaseStudy() {
     return (
         <section className="py-16 px-4 sm:px-6 lg:px-8 min-h-screen bg-gradient-to-b from-black via-blue-900 to-slate-900">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-14">
                     <h1 className="text-4xl font-bold text-white mb-3 drop-shadow" style={{ textShadow: '0 0 8px #2563eb55' }}>
-                        Stay Ahead with Manusia.AI Insights
+                        CaseStudy
                     </h1>
                     <p className="text-lg text-white/70 mb-6">
                         Stay ahead of the curve with our curated articles on AI, IT trends, automation, and real-world case studies
