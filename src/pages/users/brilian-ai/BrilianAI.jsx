@@ -96,10 +96,10 @@ export default function BrilianAI() {
 
                                 {/* Penjelasan */}
                                 <div className="w-full text-center md:text-left">
-                                    <h1 className="text-3xl md:text-5xl font-semibold font-inter text-[#489CFF] mb-6">
+                                    <h1 className="font-semibold mb-8 text-1xl md:text-4xl font-inter text-[#489CFF] mb-6">
                                         Tanya Apa Aja
                                     </h1>
-                                    <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
+                                    <p className="text-sm md:text-xl font-inter text-white/90 leading-relaxed">
                                             Cari informasi seperti berbicara dengan kolega.Brilian.AI 
                                             memungkinkan pengguna mengajukan pertanyaan dengan bahasa alami
                                             (natural language), tanpa perlu tahu struktur file atau letak dokumen. Sistem akan menjawab langsung dari sumber data internal Anda.                                    </p>
@@ -109,8 +109,6 @@ export default function BrilianAI() {
                             {/* Garis Pemisah */}
                             <hr className="border-t-2 border-slate-700 mt-12" />
                         </div>
-
-
                         {/* Feature: Buatin Laporan */}
                         <div className="mb-0" data-aos="fade-right">
                             <div className="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16">
@@ -133,10 +131,10 @@ export default function BrilianAI() {
 
                                 {/* Penjelasan */}
                                 <div className="w-full text-center md:text-left">
-                                    <h1 className="text-3xl md:text-5xl font-semibold font-inter text-[#FC6D2D] mb-6">
+                                    <h1 className="font-semibold mb-8 text-1xl md:text-4xl font-inter text-[#FC6D2D] mb-6">
                                         Buatin Laporan
                                     </h1>
-                                    <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
+                                    <p className="text-sm md:text-xl font-inter leading-relaxed">
                                         Integrasikan berbagai sumber — PDF, spreadsheet, 
                                         email, hingga notulensi — ke dalam satu platform. 
                                         Brilian.AI akan bantu menyusun dan menyajikan laporan yang siap dibagikan.                                    </p>
@@ -170,10 +168,10 @@ export default function BrilianAI() {
 
                                 {/* Penjelasan */}
                                 <div className="w-full text-center md:text-left">
-                                    <h1 className="text-3xl md:text-5xl font-semibold font-inter text-[#10E0C1] mb-6">
+                                    <h1 className="font-semibold mb-8 text-1xl md:text-4xl font-inter text-[#10E0C1] mb-6">
                                         Analisa Laporan
                                     </h1>
-                                    <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
+                                    <p className="text-sm md:text-xl font-inter leading-relaxed">
                                         Brilian.AI membaca dan memahami laporan panjang, 
                                         lalu merangkumnya menjadi insight utama: temuan penting, 
                                         tren tersembunyi, hingga anomali. Semua ditampilkan secara ringkas dan mudah dicerna.                                    </p>
@@ -207,10 +205,10 @@ export default function BrilianAI() {
 
                                 {/* Penjelasan */}
                                 <div className="w-full text-center md:text-left">
-                                    <h1 className="text-3xl md:text-5xl font-semibold font-inter text-[#489CFF] mb-6">
+                                    <h1 className="font-semibold mb-8 text-1xl md:text-4xl font-inter text-[#489CFF] mb-6">
                                         Riset Market
                                     </h1>
-                                    <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
+                                    <p className="text-sm md:text-xl font-inter leading-relaxed">
                                         Brilian.AI memindai ribuan dokumen internal dan eksternal
                                         untuk mengungkap tren pasar, pergerakan kompetitor, 
                                         serta preferensi pelanggan. Cocok untuk tim marketing, produk, dan strategi 
@@ -245,10 +243,10 @@ export default function BrilianAI() {
 
                                 {/* Penjelasan */}
                                 <div className="w-full text-center md:text-left">
-                                    <h1 className="text-3xl md:text-5xl font-semibold font-inter text-[#FC6D2D] mb-6">
+                                    <h1 className="font-semibold mb-8 text-1xl md:text-4xl font-inter text-[#FC6D2D] mb-6">
                                         Pikirin Ide
                                     </h1>   
-                                    <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
+                                    <p className="text-sm md:text-xl font-inter leading-relaxed">
                                         AI Brilian.ai membantu brainstorming otomatis berdasarkan 
                                         konteks kerja dan data Anda dandari ide konten hingga sudut 
                                         pandang unik, tanpa perlu mulai dari nol.                                    
@@ -287,10 +285,10 @@ export default function BrilianAI() {
                                 </div>
                                 {/* Teks Keterangan */}
                                 <div className="w-full text-center md:text-left">
-                                    <h1 className="text-3xl md:text-5xl font-semibold font-inter text-[#10E0C1] mb-6">
+                                    <h1 className="font-semibold mb-8 text-1xl md:text-4xl font-inter text-[#10E0C1] mb-6">
                                         Rangkumin Meeting
                                     </h1>
-                                    <p className="text-base md:text-xl font-normal font-inter text-white/90 leading-relaxed">
+                                    <p className="text-sm md:text-xl font-inter leading-relaxed">
                                         Hasil meeting, baik online maupun offline, dapat langsung ditranskrip dan dirangkum otomatis. 
                                         Dapatkan ringkasan poin penting yang siap dibagikan ke tim — tanpa perlu mengetik manual.
                                     </p>

@@ -6,7 +6,7 @@ export default function RangkumAI() {
             {/* Hero Section */}
             <section className="min-h-screen py-20 px-6 md:px-16 flex items-center justify-center bg-gradient-to-b from-black via-blue-950 to-slate-900 overflow-hidden relative">
                 {/* Hiasan bintang */}
-                <div className="absolute z-10 top-16 left-40 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center translate-x-[400px]">
+                <div className="absolute z-10 top-16 left-40 w-auto h-24 animate-pulse delay-500 opacity-30 flex justify-center translate-x-[500px]">
                     <img src="/images/Image-BintangBG.png" alt="Star" className="w-full h-full" />
                 </div>
                 <div className="relative max-w-6xl w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-0 md:px-10 gap-10">
@@ -26,7 +26,7 @@ export default function RangkumAI() {
                     </div>
                     {/* Kanan: Gambar */}
                     <div className="flex-1 flex justify-center items-center">
-                        <img src="/images/RangkumContentDS.svg" alt="Banking Chart" className=" absolute z-1w-full w-full max-w-md h-auto object-contain scale-[1.5] drop-shadow-2xl translate-x-[100px] -translate-y-[50px]" />
+                        <img src="/images/RangkumContentDS.svg" alt="Banking Chart" className=" absolute z-1w-full w-full max-w-md h-auto object-contain scale-[1.5] drop-shadow-2xl translate-x-[100px] translate-y-[60px]" />
                     </div>
                 </div>
             </section>
@@ -35,9 +35,9 @@ export default function RangkumAI() {
             <section className="relative py-16 bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900 overflow-hidden">
                 <div className="relative max-w-6xl mx-auto px-10">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-8 text-center relative z-20">What is Rangkum.AI?</h2>
-                    <div className="grid md:grid-cols-2 gap-10 items-center">
+                    <div className="md:flex md:flex-row-reverse justify-between items-center gap-12">
                         <div className="space-y-6">
-                            <p className="text-1XL md:text-2xl font-normal font-inter text-white/90 leading-relaxed ml-[-70px] mt-[-90px]">
+                            <p className="text-1XL md:text-2xl font-normal font-inter text-white/90 leading-relaxed mt-[-90px]">
                                 Rangkum.AI adalah platform Intelligent <br />
                                 Document Processing (IDP) berbasis AI yang <br />
                                 membantu organisasi mengotomatisasi <br />
@@ -50,7 +50,7 @@ export default function RangkumAI() {
                             <img
                                 src="/images/asetLogoRangkum.svg"
                                 alt="Rangkum.AI"
-                                className="w-full max-w-md h-auto object-contain scale-[1.2] translate-x-[50px]"
+                                className="w-full max-w-md h-auto object-contain scale-[1.2]"
                             />
                         </div>
                     </div>

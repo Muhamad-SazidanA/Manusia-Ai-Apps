@@ -80,7 +80,9 @@ export default function Template() {
                                     </div>
                                 </li>
                                 {/* INDUSTRIES DROPDOWN */}
-                                <li className="relative group">
+                                <li className="relative group"
+                                    onMouseEnter={() => setActiveTab(null)}
+                                >
                                     <div className="block px-4 py-2 font-medium text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white">
                                         <div className="flex items-center gap-2">
                                             <span>Industries</span>
@@ -89,12 +91,11 @@ export default function Template() {
                                     </div>
                                     <div
                                         className={`
-                absolute top-full left-0 mt-2 rounded-2xl z-50 shadow-lg overflow-hidden
-                transition-all duration-300
-                opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                ${activeTab ? 'min-w-[520px] p-3' : 'min-w-[180px] p-1'}
-                flex
-            `}
+                                            absolute top-full left-0 mt-2 rounded-2xl z-50 shadow-lg overflow-hidden
+                                            transition-all duration-300
+                                            opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                            ${activeTab === 'brilian' || activeTab === 'rangkum' ? 'min-w-[520px] p-3 flex' : 'min-w-[180px] p-1'}
+                                        `}
                                         style={{
                                             background: 'rgba(20, 30, 55, 0.55)',
                                             backdropFilter: 'blur(18px)',
@@ -110,7 +111,7 @@ export default function Template() {
                                         <div className="flex flex-col gap-2 min-w-[160px]">
                                             <div
                                                 className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-base transition-all cursor-pointer
-${activeTab === 'brilian' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent text-white/80 hover:bg-[#2196FF]/20'}`}
+                                                ${activeTab === 'brilian' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent text-white/80 hover:bg-[#2196FF]/20'}`}
                                                 onMouseEnter={() => setActiveTab('brilian')}
                                             >
                                                 <i className="fa-solid fa-brain text-lg"></i> Brilian.AI
@@ -132,7 +133,7 @@ ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent t
                                                 ></i>
                                             </div>
                                         </div>
-                                        {/* Industries */}
+                                        {/* Industries Content */}
                                         {activeTab === 'brilian' && (
                                             <div className="ml-4 animate-fade-in flex items-center" style={{ minWidth: 340, minHeight: 180 }}>
                                                 <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full">
@@ -197,7 +198,10 @@ ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent t
                                         )}
                                     </div>
                                 </li>
-                                <li className="relative group">
+                                <li
+                                    className="relative group"
+                                    onMouseEnter={() => setActiveTab('blog')}
+                                >
                                     <div className="block px-4 py-2 font-medium text-white/80 rounded-xl transition-all duration-200 hover:bg-[#0075FF] hover:text-white cursor-pointer">
                                         <div className="flex items-center gap-2">
                                             <span>Insight</span>
@@ -216,6 +220,7 @@ ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent t
                                             borderTop: '1.5px solid #2196FF',
                                             fontSize: '1rem',
                                         }}
+                                        onMouseLeave={() => setActiveTab('null')}
                                     >
                                         <div className="max-w-7xl mx-auto flex px-8 py-6 gap-8">
                                             {/* KIRI - Sidebar link */}
@@ -244,20 +249,20 @@ ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent t
 
                                             {/* KANAN - Konten tambahan */}
                                             <div className="w-3/4">
-                                                {/* Blog sebagai default saat activeTab null */}
-                                                {(activeTab === 'blog' || activeTab === 'null') && (
+                                                {/* Blog sebagai default saat pertama hover */}
+                                                {activeTab === 'blog' && (
                                                     <>
                                                         <div className="grid grid-cols-3 gap-6 mb-4 animate-fade-in">
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog1.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Artikel Blog 1</div>
                                                             </div>
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog2.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Artikel Blog 2</div>
                                                             </div>
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog1.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Artikel Blog 3</div>
                                                             </div>
                                                         </div>
@@ -272,15 +277,15 @@ ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent t
                                                     <>
                                                         <div className="grid grid-cols-3 gap-6 mb-4 animate-fade-in">
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog1.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Events 1</div>
                                                             </div>
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog1.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Events 2</div>
                                                             </div>
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog1.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Events 3</div>
                                                             </div>
                                                         </div>
@@ -295,15 +300,15 @@ ${activeTab === 'rangkum' ? 'bg-[#2196FF] text-white shadow' : 'bg-transparent t
                                                     <>
                                                         <div className="grid grid-cols-3 gap-6 mb-4 animate-fade-in">
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog1.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Case Study 1</div>
                                                             </div>
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog1.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Case Study 2</div>
                                                             </div>
                                                             <div className="bg-white/10 rounded-xl overflow-hidden shadow">
-                                                                <img src="images/Image-Blog1.png" className="w-full" />
+                                                                <img src="/images/Image-Blog1.png" className="w-full" />
                                                                 <div className="p-4 font-semibold text-white text-sm">Judul Case Study 3</div>
                                                             </div>
                                                         </div>
